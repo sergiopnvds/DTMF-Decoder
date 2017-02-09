@@ -1,0 +1,93 @@
+Release 14.4 - xst P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/Sergio Penavades/VHDL/dsedfinal/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/Sergio Penavades/VHDL/dsedfinal/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: dtmf_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\Sergio Penavades\VHDL\dsedfinal\filtro941.vhd" into library work
+Parsing entity <filtro941>.
+Parsing architecture <Behavioral> of entity <filtro941>.
+Parsing VHDL file "C:\Users\Sergio Penavades\VHDL\dsedfinal\filtro852.vhd" into library work
+Parsing entity <filtro852>.
+Parsing architecture <Behavioral> of entity <filtro852>.
+Parsing VHDL file "C:\Users\Sergio Penavades\VHDL\dsedfinal\filtro770.vhd" into library work
+Parsing entity <filtro770>.
+Parsing architecture <Behavioral> of entity <filtro770>.
+Parsing VHDL file "C:\Users\Sergio Penavades\VHDL\dsedfinal\filtro697.vhd" into library work
+Parsing entity <filtro697>.
+Parsing architecture <Behavioral> of entity <filtro697>.
+Parsing VHDL file "C:\Users\Sergio Penavades\VHDL\dsedfinal\filtro1633.vhd" into library work
+Parsing entity <filtro1633>.
+Parsing architecture <Behavioral> of entity <filtro1633>.
+Parsing VHDL file "C:\Users\Sergio Penavades\VHDL\dsedfinal\filtro1477.vhd" into library work
+Parsing entity <filtro1477>.
+Parsing architecture <Behavioral> of entity <filtro1477>.
+Parsing VHDL file "C:\Users\Sergio Penavades\VHDL\dsedfinal\filtro1336.vhd" into library work
+Parsing entity <filtro1336>.
+Parsing architecture <Behavioral> of entity <filtro1336>.
+Parsing VHDL file "C:\Users\Sergio Penavades\VHDL\dsedfinal\filtro1209.vhd" into library work
+Parsing entity <filtro1209>.
+Parsing architecture <Behavioral> of entity <filtro1209>.
+Parsing VHDL file "C:\Users\Sergio Penavades\VHDL\dsedfinal\maquina_estados.vhd" into library work
+Parsing entity <maquina_estados>.
+Parsing architecture <Behavioral> of entity <maquina_estados>.
+Parsing VHDL file "C:\Users\Sergio Penavades\VHDL\dsedfinal\counter205.vhd" into library work
+Parsing entity <counter205>.
+Parsing architecture <Behavioral> of entity <counter205>.
+Parsing VHDL file "C:\Users\Sergio Penavades\VHDL\dsedfinal\comparador.vhd" into library work
+Parsing entity <comparador>.
+Parsing architecture <Behavioral> of entity <comparador>.
+Parsing VHDL file "C:\Users\Sergio Penavades\VHDL\dsedfinal\bancoDeFiltros.vhd" into library work
+Parsing entity <bancoDeFiltros>.
+Parsing architecture <Behavioral> of entity <bancodefiltros>.
+Parsing VHDL file "C:\Users\Sergio Penavades\VHDL\dsedfinal\dtmf_top.vhd" into library work
+Parsing entity <dtmf_top>.
+Parsing architecture <Behavioral> of entity <dtmf_top>.
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 3.87 secs
+ 
+--> 
+
+Total memory usage is 181788 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

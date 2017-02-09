@@ -1,0 +1,47 @@
+Running: C:\Xilinx\14.4\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/Sergio Penavades/VHDL/dsedfinal/tb_dtmf_top_isim_beh.exe -prj C:/Users/Sergio Penavades/VHDL/dsedfinal/tb_dtmf_top_beh.prj work.tb_dtmf_top 
+ISim P.49d (signature 0x7708f090)
+Number of CPUs detected in this system: 1
+Turning on mult-threading, number of parallel sub-compilation jobs: 0 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/Sergio Penavades/VHDL/dsedfinal/filtro941.vhd" into library work
+Parsing VHDL file "C:/Users/Sergio Penavades/VHDL/dsedfinal/filtro852.vhd" into library work
+Parsing VHDL file "C:/Users/Sergio Penavades/VHDL/dsedfinal/filtro770.vhd" into library work
+Parsing VHDL file "C:/Users/Sergio Penavades/VHDL/dsedfinal/filtro697.vhd" into library work
+Parsing VHDL file "C:/Users/Sergio Penavades/VHDL/dsedfinal/filtro1633.vhd" into library work
+Parsing VHDL file "C:/Users/Sergio Penavades/VHDL/dsedfinal/filtro1477.vhd" into library work
+Parsing VHDL file "C:/Users/Sergio Penavades/VHDL/dsedfinal/filtro1336.vhd" into library work
+Parsing VHDL file "C:/Users/Sergio Penavades/VHDL/dsedfinal/filtro1209.vhd" into library work
+Parsing VHDL file "C:/Users/Sergio Penavades/VHDL/dsedfinal/maquina_estados.vhd" into library work
+Parsing VHDL file "C:/Users/Sergio Penavades/VHDL/dsedfinal/counter205.vhd" into library work
+Parsing VHDL file "C:/Users/Sergio Penavades/VHDL/dsedfinal/comparador.vhd" into library work
+Parsing VHDL file "C:/Users/Sergio Penavades/VHDL/dsedfinal/bancoDeFiltros.vhd" into library work
+Parsing VHDL file "C:/Users/Sergio Penavades/VHDL/dsedfinal/dtmf_top.vhd" into library work
+Parsing VHDL file "C:/Users/Sergio Penavades/VHDL/dsedfinal/tb_dtmf_top.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package textio
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package std_logic_textio
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity counter205 [counter205_default]
+Compiling architecture behavioral of entity filtro697 [filtro697_default]
+Compiling architecture behavioral of entity filtro770 [filtro770_default]
+Compiling architecture behavioral of entity filtro852 [filtro852_default]
+Compiling architecture behavioral of entity filtro941 [filtro941_default]
+Compiling architecture behavioral of entity filtro1209 [filtro1209_default]
+Compiling architecture behavioral of entity filtro1336 [filtro1336_default]
+Compiling architecture behavioral of entity filtro1477 [filtro1477_default]
+Compiling architecture behavioral of entity filtro1633 [filtro1633_default]
+Compiling architecture behavioral of entity bancoDeFiltros [bancodefiltros_default]
+Compiling architecture behavioral of entity comparador [comparador_default]
+Compiling architecture behavioral of entity maquina_estados [\maquina_estados(240,80)\]
+Compiling architecture behavioral of entity dtmf_top [dtmf_top_default]
+Compiling architecture behavior of entity tb_dtmf_top
+Time Resolution for simulation is 1ps.
+Compiled 34 VHDL Units
+Built simulation executable C:/Users/Sergio Penavades/VHDL/dsedfinal/tb_dtmf_top_isim_beh.exe
+Fuse Memory Usage: 36008 KB
+Fuse CPU Usage: 717 ms

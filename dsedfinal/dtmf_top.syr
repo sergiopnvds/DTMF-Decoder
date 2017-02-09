@@ -1,0 +1,1375 @@
+Release 14.4 - xst P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: dtmf_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "dtmf_top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "dtmf_top"
+Output Format                      : NGC
+Target Device                      : xc6slx4l-1L-tqg144
+
+---- Source Options
+Top Module Name                    : dtmf_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\Sergio Penavades\VHDL\dsedfinal\filtro941.vhd" into library work
+Parsing entity <filtro941>.
+Parsing architecture <Behavioral> of entity <filtro941>.
+Parsing VHDL file "C:\Users\Sergio Penavades\VHDL\dsedfinal\filtro852.vhd" into library work
+Parsing entity <filtro852>.
+Parsing architecture <Behavioral> of entity <filtro852>.
+Parsing VHDL file "C:\Users\Sergio Penavades\VHDL\dsedfinal\filtro770.vhd" into library work
+Parsing entity <filtro770>.
+Parsing architecture <Behavioral> of entity <filtro770>.
+Parsing VHDL file "C:\Users\Sergio Penavades\VHDL\dsedfinal\filtro697.vhd" into library work
+Parsing entity <filtro697>.
+Parsing architecture <Behavioral> of entity <filtro697>.
+Parsing VHDL file "C:\Users\Sergio Penavades\VHDL\dsedfinal\filtro1633.vhd" into library work
+Parsing entity <filtro1633>.
+Parsing architecture <Behavioral> of entity <filtro1633>.
+Parsing VHDL file "C:\Users\Sergio Penavades\VHDL\dsedfinal\filtro1477.vhd" into library work
+Parsing entity <filtro1477>.
+Parsing architecture <Behavioral> of entity <filtro1477>.
+Parsing VHDL file "C:\Users\Sergio Penavades\VHDL\dsedfinal\filtro1336.vhd" into library work
+Parsing entity <filtro1336>.
+Parsing architecture <Behavioral> of entity <filtro1336>.
+Parsing VHDL file "C:\Users\Sergio Penavades\VHDL\dsedfinal\filtro1209.vhd" into library work
+Parsing entity <filtro1209>.
+Parsing architecture <Behavioral> of entity <filtro1209>.
+Parsing VHDL file "C:\Users\Sergio Penavades\VHDL\dsedfinal\maquina_estados.vhd" into library work
+Parsing entity <maquina_estados>.
+Parsing architecture <Behavioral> of entity <maquina_estados>.
+Parsing VHDL file "C:\Users\Sergio Penavades\VHDL\dsedfinal\counter205.vhd" into library work
+Parsing entity <counter205>.
+Parsing architecture <Behavioral> of entity <counter205>.
+Parsing VHDL file "C:\Users\Sergio Penavades\VHDL\dsedfinal\comparador.vhd" into library work
+Parsing entity <comparador>.
+Parsing architecture <Behavioral> of entity <comparador>.
+Parsing VHDL file "C:\Users\Sergio Penavades\VHDL\dsedfinal\bancoDeFiltros.vhd" into library work
+Parsing entity <bancoDeFiltros>.
+Parsing architecture <Behavioral> of entity <bancodefiltros>.
+Parsing VHDL file "C:\Users\Sergio Penavades\VHDL\dsedfinal\dtmf_top.vhd" into library work
+Parsing entity <dtmf_top>.
+Parsing architecture <Behavioral> of entity <dtmf_top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <dtmf_top> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <counter205> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <bancoDeFiltros> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <filtro697> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <filtro770> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <filtro852> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <filtro941> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <filtro1209> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <filtro1336> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <filtro1477> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <filtro1633> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <comparador> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "C:\Users\Sergio Penavades\VHDL\dsedfinal\comparador.vhd" Line 45: input1 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Sergio Penavades\VHDL\dsedfinal\comparador.vhd" Line 51: input2 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Sergio Penavades\VHDL\dsedfinal\comparador.vhd" Line 57: input3 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Sergio Penavades\VHDL\dsedfinal\comparador.vhd" Line 63: input4 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Sergio Penavades\VHDL\dsedfinal\comparador.vhd" Line 69: input5 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Sergio Penavades\VHDL\dsedfinal\comparador.vhd" Line 75: input6 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Sergio Penavades\VHDL\dsedfinal\comparador.vhd" Line 81: input7 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Sergio Penavades\VHDL\dsedfinal\comparador.vhd" Line 87: input8 should be on the sensitivity list of the process
+
+Elaborating entity <maquina_estados> (architecture <Behavioral>) with generics from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <dtmf_top>.
+    Related source file is "C:\Users\Sergio Penavades\VHDL\dsedfinal\dtmf_top.vhd".
+    Summary:
+	no macro.
+Unit <dtmf_top> synthesized.
+
+Synthesizing Unit <counter205>.
+    Related source file is "C:\Users\Sergio Penavades\VHDL\dsedfinal\counter205.vhd".
+    Found 32-bit register for signal <count>.
+    Found 1-bit register for signal <flag205>.
+    Found 32-bit adder for signal <count[31]_GND_7_o_add_0_OUT> created at line 21.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  33 D-type flip-flop(s).
+Unit <counter205> synthesized.
+
+Synthesizing Unit <bancoDeFiltros>.
+    Related source file is "C:\Users\Sergio Penavades\VHDL\dsedfinal\bancoDeFiltros.vhd".
+    Summary:
+	no macro.
+Unit <bancoDeFiltros> synthesized.
+
+Synthesizing Unit <filtro697>.
+    Related source file is "C:\Users\Sergio Penavades\VHDL\dsedfinal\filtro697.vhd".
+    Found 32-bit register for signal <q2>.
+    Found 32-bit register for signal <q1>.
+    Found 32-bit register for signal <output>.
+    Found 32-bit register for signal <q>.
+    Found 32-bit adder for signal <q1[31]_q[31]_add_1_OUT> created at line 46.
+    Found 32-bit adder for signal <q2[31]_q1[31]_add_5_OUT> created at line 48.
+    Found 32-bit adder for signal <inputSignal[31]_GND_9_o_add_7_OUT> created at line 60.
+    Found 32-bit subtractor for signal <inputSignal[31]_q2[31]_sub_9_OUT<31:0>> created at line 60.
+    Found 32x17-bit multiplier for signal <n0021> created at line 46.
+    Found 32x17-bit multiplier for signal <n0023> created at line 47.
+    Found 32x32-bit multiplier for signal <n0024> created at line 48.
+    Found 32x32-bit multiplier for signal <n0025> created at line 48.
+    Found 18x32-bit multiplier for signal <n0027> created at line 60.
+    Summary:
+	inferred   5 Multiplier(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred 128 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <filtro697> synthesized.
+
+Synthesizing Unit <filtro770>.
+    Related source file is "C:\Users\Sergio Penavades\VHDL\dsedfinal\filtro770.vhd".
+    Found 32-bit register for signal <q2>.
+    Found 32-bit register for signal <q1>.
+    Found 32-bit register for signal <output>.
+    Found 32-bit register for signal <q>.
+    Found 32-bit adder for signal <q1[31]_q[31]_add_1_OUT> created at line 46.
+    Found 32-bit adder for signal <q2[31]_q1[31]_add_5_OUT> created at line 48.
+    Found 32-bit adder for signal <inputSignal[31]_GND_13_o_add_7_OUT> created at line 57.
+    Found 32-bit subtractor for signal <inputSignal[31]_q2[31]_sub_9_OUT<31:0>> created at line 57.
+    Found 32x17-bit multiplier for signal <n0021> created at line 46.
+    Found 32x17-bit multiplier for signal <n0023> created at line 47.
+    Found 32x32-bit multiplier for signal <n0024> created at line 48.
+    Found 32x32-bit multiplier for signal <n0025> created at line 48.
+    Found 18x32-bit multiplier for signal <n0027> created at line 57.
+    Summary:
+	inferred   5 Multiplier(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred 128 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <filtro770> synthesized.
+
+Synthesizing Unit <filtro852>.
+    Related source file is "C:\Users\Sergio Penavades\VHDL\dsedfinal\filtro852.vhd".
+    Found 32-bit register for signal <q2>.
+    Found 32-bit register for signal <q1>.
+    Found 32-bit register for signal <output>.
+    Found 32-bit register for signal <q>.
+    Found 32-bit adder for signal <q1[31]_q[31]_add_1_OUT> created at line 41.
+    Found 32-bit adder for signal <q2[31]_q1[31]_add_5_OUT> created at line 43.
+    Found 32-bit adder for signal <inputSignal[31]_GND_14_o_add_7_OUT> created at line 51.
+    Found 32-bit subtractor for signal <inputSignal[31]_q2[31]_sub_9_OUT<31:0>> created at line 51.
+    Found 32x17-bit multiplier for signal <n0021> created at line 41.
+    Found 32x17-bit multiplier for signal <n0023> created at line 42.
+    Found 32x32-bit multiplier for signal <n0024> created at line 43.
+    Found 32x32-bit multiplier for signal <n0025> created at line 43.
+    Found 18x32-bit multiplier for signal <n0027> created at line 51.
+    Summary:
+	inferred   5 Multiplier(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred 128 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <filtro852> synthesized.
+
+Synthesizing Unit <filtro941>.
+    Related source file is "C:\Users\Sergio Penavades\VHDL\dsedfinal\filtro941.vhd".
+    Found 32-bit register for signal <q2>.
+    Found 32-bit register for signal <q1>.
+    Found 32-bit register for signal <output>.
+    Found 32-bit register for signal <q>.
+    Found 32-bit adder for signal <q1[31]_q[31]_add_1_OUT> created at line 45.
+    Found 32-bit adder for signal <q2[31]_q1[31]_add_5_OUT> created at line 47.
+    Found 32-bit adder for signal <inputSignal[31]_GND_15_o_add_7_OUT> created at line 55.
+    Found 32-bit subtractor for signal <inputSignal[31]_q2[31]_sub_9_OUT<31:0>> created at line 55.
+    Found 32x17-bit multiplier for signal <n0021> created at line 45.
+    Found 32x17-bit multiplier for signal <n0023> created at line 46.
+    Found 32x32-bit multiplier for signal <n0024> created at line 47.
+    Found 32x32-bit multiplier for signal <n0025> created at line 47.
+    Found 18x32-bit multiplier for signal <n0027> created at line 55.
+    Summary:
+	inferred   5 Multiplier(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred 128 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <filtro941> synthesized.
+
+Synthesizing Unit <filtro1209>.
+    Related source file is "C:\Users\Sergio Penavades\VHDL\dsedfinal\filtro1209.vhd".
+    Found 32-bit register for signal <q2>.
+    Found 32-bit register for signal <q1>.
+    Found 32-bit register for signal <output>.
+    Found 32-bit register for signal <q>.
+    Found 32-bit adder for signal <q1[31]_q[31]_add_1_OUT> created at line 45.
+    Found 32-bit adder for signal <q2[31]_q1[31]_add_5_OUT> created at line 47.
+    Found 32-bit adder for signal <inputSignal[31]_GND_16_o_add_7_OUT> created at line 55.
+    Found 32-bit subtractor for signal <inputSignal[31]_q2[31]_sub_9_OUT<31:0>> created at line 55.
+    Found 32x17-bit multiplier for signal <n0021> created at line 45.
+    Found 32x17-bit multiplier for signal <n0023> created at line 46.
+    Found 32x32-bit multiplier for signal <n0024> created at line 47.
+    Found 32x32-bit multiplier for signal <n0025> created at line 47.
+    Found 18x32-bit multiplier for signal <n0027> created at line 55.
+    Summary:
+	inferred   5 Multiplier(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred 128 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <filtro1209> synthesized.
+
+Synthesizing Unit <filtro1336>.
+    Related source file is "C:\Users\Sergio Penavades\VHDL\dsedfinal\filtro1336.vhd".
+    Found 32-bit register for signal <q2>.
+    Found 32-bit register for signal <q1>.
+    Found 32-bit register for signal <output>.
+    Found 32-bit register for signal <q>.
+    Found 32-bit adder for signal <q1[31]_q[31]_add_1_OUT> created at line 44.
+    Found 32-bit adder for signal <q2[31]_q1[31]_add_5_OUT> created at line 46.
+    Found 32-bit adder for signal <inputSignal[31]_GND_17_o_add_7_OUT> created at line 54.
+    Found 32-bit subtractor for signal <inputSignal[31]_q2[31]_sub_9_OUT<31:0>> created at line 54.
+    Found 32x16-bit multiplier for signal <n0021> created at line 44.
+    Found 32x17-bit multiplier for signal <n0023> created at line 45.
+    Found 32x32-bit multiplier for signal <n0024> created at line 46.
+    Found 32x32-bit multiplier for signal <n0025> created at line 46.
+    Found 17x32-bit multiplier for signal <n0027> created at line 54.
+    Summary:
+	inferred   5 Multiplier(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred 128 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <filtro1336> synthesized.
+
+Synthesizing Unit <filtro1477>.
+    Related source file is "C:\Users\Sergio Penavades\VHDL\dsedfinal\filtro1477.vhd".
+    Found 32-bit register for signal <q2>.
+    Found 32-bit register for signal <q1>.
+    Found 32-bit register for signal <output>.
+    Found 32-bit register for signal <q>.
+    Found 32-bit adder for signal <q1[31]_q[31]_add_1_OUT> created at line 44.
+    Found 32-bit adder for signal <q2[31]_q1[31]_add_5_OUT> created at line 46.
+    Found 32-bit adder for signal <inputSignal[31]_GND_20_o_add_7_OUT> created at line 54.
+    Found 32-bit subtractor for signal <inputSignal[31]_q2[31]_sub_9_OUT<31:0>> created at line 54.
+    Found 32x16-bit multiplier for signal <n0021> created at line 44.
+    Found 32x17-bit multiplier for signal <n0023> created at line 45.
+    Found 32x32-bit multiplier for signal <n0024> created at line 46.
+    Found 32x32-bit multiplier for signal <n0025> created at line 46.
+    Found 17x32-bit multiplier for signal <n0027> created at line 54.
+    Summary:
+	inferred   5 Multiplier(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred 128 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <filtro1477> synthesized.
+
+Synthesizing Unit <filtro1633>.
+    Related source file is "C:\Users\Sergio Penavades\VHDL\dsedfinal\filtro1633.vhd".
+    Found 32-bit register for signal <q2>.
+    Found 32-bit register for signal <q1>.
+    Found 32-bit register for signal <output>.
+    Found 32-bit register for signal <q>.
+    Found 32-bit adder for signal <q1[31]_q[31]_add_1_OUT> created at line 45.
+    Found 32-bit adder for signal <q2[31]_q1[31]_add_5_OUT> created at line 47.
+    Found 32-bit adder for signal <inputSignal[31]_GND_21_o_add_7_OUT> created at line 55.
+    Found 32-bit subtractor for signal <inputSignal[31]_q2[31]_sub_9_OUT<31:0>> created at line 55.
+    Found 32x16-bit multiplier for signal <n0021> created at line 45.
+    Found 32x17-bit multiplier for signal <n0023> created at line 46.
+    Found 32x32-bit multiplier for signal <n0024> created at line 47.
+    Found 32x32-bit multiplier for signal <n0025> created at line 47.
+    Found 17x32-bit multiplier for signal <n0027> created at line 55.
+    Summary:
+	inferred   5 Multiplier(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred 128 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <filtro1633> synthesized.
+
+Synthesizing Unit <comparador>.
+    Related source file is "C:\Users\Sergio Penavades\VHDL\dsedfinal\comparador.vhd".
+WARNING:Xst:737 - Found 1-bit latch for signal <output<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 32-bit comparator greater for signal <input1[31]_GND_22_o_LessThan_1_o> created at line 45
+    Found 32-bit comparator greater for signal <input2[31]_GND_22_o_LessThan_2_o> created at line 51
+    Found 32-bit comparator greater for signal <input3[31]_GND_22_o_LessThan_3_o> created at line 57
+    Found 32-bit comparator greater for signal <input4[31]_GND_22_o_LessThan_4_o> created at line 63
+    Found 32-bit comparator greater for signal <input5[31]_GND_22_o_LessThan_5_o> created at line 69
+    Found 32-bit comparator greater for signal <input6[31]_GND_22_o_LessThan_6_o> created at line 75
+    Found 32-bit comparator greater for signal <input7[31]_GND_22_o_LessThan_7_o> created at line 81
+    Found 32-bit comparator greater for signal <input8[31]_GND_22_o_LessThan_8_o> created at line 87
+    Summary:
+	inferred   8 Latch(s).
+	inferred   8 Comparator(s).
+Unit <comparador> synthesized.
+
+Synthesizing Unit <maquina_estados>.
+    Related source file is "C:\Users\Sergio Penavades\VHDL\dsedfinal\maquina_estados.vhd".
+        max_valido = 240
+        max_invalido = 80
+    Found 32-bit register for signal <cuenta_valido>.
+    Found 32-bit register for signal <cuenta_invalido>.
+    Found 2-bit register for signal <estado_siguiente>.
+    Found 7-bit register for signal <salida_bcd>.
+    Found 8-bit register for signal <vector_acumulado1>.
+    Found finite state machine <FSM_0> for signal <estado_siguiente>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 9                                              |
+    | Inputs             | 4                                              |
+    | Outputs            | 2                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | espera                                         |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 32-bit adder for signal <cuenta_invalido[31]_GND_31_o_add_12_OUT> created at line 57.
+    Found 32-bit adder for signal <cuenta_valido[31]_GND_31_o_add_15_OUT> created at line 64.
+    Found 8-bit comparator equal for signal <vector_acumulado1[7]_vector_tecla[7]_equal_4_o> created at line 43
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  79 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   5 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <maquina_estados> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 40
+ 32x16-bit multiplier                                  : 3
+ 32x17-bit multiplier                                  : 16
+ 32x18-bit multiplier                                  : 5
+ 32x32-bit multiplier                                  : 16
+# Adders/Subtractors                                   : 35
+ 32-bit adder                                          : 19
+ 32-bit addsub                                         : 8
+ 32-bit subtractor                                     : 8
+# Registers                                            : 38
+ 1-bit register                                        : 1
+ 32-bit register                                       : 35
+ 7-bit register                                        : 1
+ 8-bit register                                        : 1
+# Latches                                              : 8
+ 1-bit latch                                           : 8
+# Comparators                                          : 9
+ 32-bit comparator greater                             : 8
+ 8-bit comparator equal                                : 1
+# Multiplexers                                         : 21
+ 32-bit 2-to-1 multiplexer                             : 21
+# FSMs                                                 : 1
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <q_17> in Unit <filt697> is equivalent to the following FF/Latch, which will be removed : <output_17> 
+INFO:Xst:2261 - The FF/Latch <q_22> in Unit <filt697> is equivalent to the following FF/Latch, which will be removed : <output_22> 
+INFO:Xst:2261 - The FF/Latch <q_18> in Unit <filt697> is equivalent to the following FF/Latch, which will be removed : <output_18> 
+INFO:Xst:2261 - The FF/Latch <q_23> in Unit <filt697> is equivalent to the following FF/Latch, which will be removed : <output_23> 
+INFO:Xst:2261 - The FF/Latch <q_19> in Unit <filt697> is equivalent to the following FF/Latch, which will be removed : <output_19> 
+INFO:Xst:2261 - The FF/Latch <q_24> in Unit <filt697> is equivalent to the following FF/Latch, which will be removed : <output_24> 
+INFO:Xst:2261 - The FF/Latch <q_25> in Unit <filt697> is equivalent to the following FF/Latch, which will be removed : <output_25> 
+INFO:Xst:2261 - The FF/Latch <q_30> in Unit <filt697> is equivalent to the following FF/Latch, which will be removed : <output_30> 
+INFO:Xst:2261 - The FF/Latch <q_26> in Unit <filt697> is equivalent to the following FF/Latch, which will be removed : <output_26> 
+INFO:Xst:2261 - The FF/Latch <q_31> in Unit <filt697> is equivalent to the following FF/Latch, which will be removed : <output_31> 
+INFO:Xst:2261 - The FF/Latch <q_27> in Unit <filt697> is equivalent to the following FF/Latch, which will be removed : <output_27> 
+INFO:Xst:2261 - The FF/Latch <q_28> in Unit <filt697> is equivalent to the following FF/Latch, which will be removed : <output_28> 
+INFO:Xst:2261 - The FF/Latch <q_29> in Unit <filt697> is equivalent to the following FF/Latch, which will be removed : <output_29> 
+INFO:Xst:2261 - The FF/Latch <q_0> in Unit <filt697> is equivalent to the following FF/Latch, which will be removed : <output_0> 
+INFO:Xst:2261 - The FF/Latch <q_1> in Unit <filt697> is equivalent to the following FF/Latch, which will be removed : <output_1> 
+INFO:Xst:2261 - The FF/Latch <q_2> in Unit <filt697> is equivalent to the following FF/Latch, which will be removed : <output_2> 
+INFO:Xst:2261 - The FF/Latch <q_3> in Unit <filt697> is equivalent to the following FF/Latch, which will be removed : <output_3> 
+INFO:Xst:2261 - The FF/Latch <q_4> in Unit <filt697> is equivalent to the following FF/Latch, which will be removed : <output_4> 
+INFO:Xst:2261 - The FF/Latch <q_5> in Unit <filt697> is equivalent to the following FF/Latch, which will be removed : <output_5> 
+INFO:Xst:2261 - The FF/Latch <q_6> in Unit <filt697> is equivalent to the following FF/Latch, which will be removed : <output_6> 
+INFO:Xst:2261 - The FF/Latch <q_7> in Unit <filt697> is equivalent to the following FF/Latch, which will be removed : <output_7> 
+INFO:Xst:2261 - The FF/Latch <q_8> in Unit <filt697> is equivalent to the following FF/Latch, which will be removed : <output_8> 
+INFO:Xst:2261 - The FF/Latch <q_9> in Unit <filt697> is equivalent to the following FF/Latch, which will be removed : <output_9> 
+INFO:Xst:2261 - The FF/Latch <q_10> in Unit <filt697> is equivalent to the following FF/Latch, which will be removed : <output_10> 
+INFO:Xst:2261 - The FF/Latch <q_11> in Unit <filt697> is equivalent to the following FF/Latch, which will be removed : <output_11> 
+INFO:Xst:2261 - The FF/Latch <q_12> in Unit <filt697> is equivalent to the following FF/Latch, which will be removed : <output_12> 
+INFO:Xst:2261 - The FF/Latch <q_13> in Unit <filt697> is equivalent to the following FF/Latch, which will be removed : <output_13> 
+INFO:Xst:2261 - The FF/Latch <q_14> in Unit <filt697> is equivalent to the following FF/Latch, which will be removed : <output_14> 
+INFO:Xst:2261 - The FF/Latch <q_15> in Unit <filt697> is equivalent to the following FF/Latch, which will be removed : <output_15> 
+INFO:Xst:2261 - The FF/Latch <q_20> in Unit <filt697> is equivalent to the following FF/Latch, which will be removed : <output_20> 
+INFO:Xst:2261 - The FF/Latch <q_16> in Unit <filt697> is equivalent to the following FF/Latch, which will be removed : <output_16> 
+INFO:Xst:2261 - The FF/Latch <q_21> in Unit <filt697> is equivalent to the following FF/Latch, which will be removed : <output_21> 
+INFO:Xst:2261 - The FF/Latch <q_17> in Unit <filt770> is equivalent to the following FF/Latch, which will be removed : <output_17> 
+INFO:Xst:2261 - The FF/Latch <q_22> in Unit <filt770> is equivalent to the following FF/Latch, which will be removed : <output_22> 
+INFO:Xst:2261 - The FF/Latch <q_18> in Unit <filt770> is equivalent to the following FF/Latch, which will be removed : <output_18> 
+INFO:Xst:2261 - The FF/Latch <q_23> in Unit <filt770> is equivalent to the following FF/Latch, which will be removed : <output_23> 
+INFO:Xst:2261 - The FF/Latch <q_19> in Unit <filt770> is equivalent to the following FF/Latch, which will be removed : <output_19> 
+INFO:Xst:2261 - The FF/Latch <q_24> in Unit <filt770> is equivalent to the following FF/Latch, which will be removed : <output_24> 
+INFO:Xst:2261 - The FF/Latch <q_25> in Unit <filt770> is equivalent to the following FF/Latch, which will be removed : <output_25> 
+INFO:Xst:2261 - The FF/Latch <q_30> in Unit <filt770> is equivalent to the following FF/Latch, which will be removed : <output_30> 
+INFO:Xst:2261 - The FF/Latch <q_26> in Unit <filt770> is equivalent to the following FF/Latch, which will be removed : <output_26> 
+INFO:Xst:2261 - The FF/Latch <q_31> in Unit <filt770> is equivalent to the following FF/Latch, which will be removed : <output_31> 
+INFO:Xst:2261 - The FF/Latch <q_27> in Unit <filt770> is equivalent to the following FF/Latch, which will be removed : <output_27> 
+INFO:Xst:2261 - The FF/Latch <q_28> in Unit <filt770> is equivalent to the following FF/Latch, which will be removed : <output_28> 
+INFO:Xst:2261 - The FF/Latch <q_29> in Unit <filt770> is equivalent to the following FF/Latch, which will be removed : <output_29> 
+INFO:Xst:2261 - The FF/Latch <q_0> in Unit <filt770> is equivalent to the following FF/Latch, which will be removed : <output_0> 
+INFO:Xst:2261 - The FF/Latch <q_1> in Unit <filt770> is equivalent to the following FF/Latch, which will be removed : <output_1> 
+INFO:Xst:2261 - The FF/Latch <q_2> in Unit <filt770> is equivalent to the following FF/Latch, which will be removed : <output_2> 
+INFO:Xst:2261 - The FF/Latch <q_3> in Unit <filt770> is equivalent to the following FF/Latch, which will be removed : <output_3> 
+INFO:Xst:2261 - The FF/Latch <q_4> in Unit <filt770> is equivalent to the following FF/Latch, which will be removed : <output_4> 
+INFO:Xst:2261 - The FF/Latch <q_5> in Unit <filt770> is equivalent to the following FF/Latch, which will be removed : <output_5> 
+INFO:Xst:2261 - The FF/Latch <q_6> in Unit <filt770> is equivalent to the following FF/Latch, which will be removed : <output_6> 
+INFO:Xst:2261 - The FF/Latch <q_7> in Unit <filt770> is equivalent to the following FF/Latch, which will be removed : <output_7> 
+INFO:Xst:2261 - The FF/Latch <q_8> in Unit <filt770> is equivalent to the following FF/Latch, which will be removed : <output_8> 
+INFO:Xst:2261 - The FF/Latch <q_9> in Unit <filt770> is equivalent to the following FF/Latch, which will be removed : <output_9> 
+INFO:Xst:2261 - The FF/Latch <q_10> in Unit <filt770> is equivalent to the following FF/Latch, which will be removed : <output_10> 
+INFO:Xst:2261 - The FF/Latch <q_11> in Unit <filt770> is equivalent to the following FF/Latch, which will be removed : <output_11> 
+INFO:Xst:2261 - The FF/Latch <q_12> in Unit <filt770> is equivalent to the following FF/Latch, which will be removed : <output_12> 
+INFO:Xst:2261 - The FF/Latch <q_13> in Unit <filt770> is equivalent to the following FF/Latch, which will be removed : <output_13> 
+INFO:Xst:2261 - The FF/Latch <q_14> in Unit <filt770> is equivalent to the following FF/Latch, which will be removed : <output_14> 
+INFO:Xst:2261 - The FF/Latch <q_15> in Unit <filt770> is equivalent to the following FF/Latch, which will be removed : <output_15> 
+INFO:Xst:2261 - The FF/Latch <q_20> in Unit <filt770> is equivalent to the following FF/Latch, which will be removed : <output_20> 
+INFO:Xst:2261 - The FF/Latch <q_16> in Unit <filt770> is equivalent to the following FF/Latch, which will be removed : <output_16> 
+INFO:Xst:2261 - The FF/Latch <q_21> in Unit <filt770> is equivalent to the following FF/Latch, which will be removed : <output_21> 
+INFO:Xst:2261 - The FF/Latch <q_17> in Unit <filt852> is equivalent to the following FF/Latch, which will be removed : <output_17> 
+INFO:Xst:2261 - The FF/Latch <q_22> in Unit <filt852> is equivalent to the following FF/Latch, which will be removed : <output_22> 
+INFO:Xst:2261 - The FF/Latch <q_18> in Unit <filt852> is equivalent to the following FF/Latch, which will be removed : <output_18> 
+INFO:Xst:2261 - The FF/Latch <q_23> in Unit <filt852> is equivalent to the following FF/Latch, which will be removed : <output_23> 
+INFO:Xst:2261 - The FF/Latch <q_19> in Unit <filt852> is equivalent to the following FF/Latch, which will be removed : <output_19> 
+INFO:Xst:2261 - The FF/Latch <q_24> in Unit <filt852> is equivalent to the following FF/Latch, which will be removed : <output_24> 
+INFO:Xst:2261 - The FF/Latch <q_25> in Unit <filt852> is equivalent to the following FF/Latch, which will be removed : <output_25> 
+INFO:Xst:2261 - The FF/Latch <q_30> in Unit <filt852> is equivalent to the following FF/Latch, which will be removed : <output_30> 
+INFO:Xst:2261 - The FF/Latch <q_26> in Unit <filt852> is equivalent to the following FF/Latch, which will be removed : <output_26> 
+INFO:Xst:2261 - The FF/Latch <q_31> in Unit <filt852> is equivalent to the following FF/Latch, which will be removed : <output_31> 
+INFO:Xst:2261 - The FF/Latch <q_27> in Unit <filt852> is equivalent to the following FF/Latch, which will be removed : <output_27> 
+INFO:Xst:2261 - The FF/Latch <q_28> in Unit <filt852> is equivalent to the following FF/Latch, which will be removed : <output_28> 
+INFO:Xst:2261 - The FF/Latch <q_29> in Unit <filt852> is equivalent to the following FF/Latch, which will be removed : <output_29> 
+INFO:Xst:2261 - The FF/Latch <q_0> in Unit <filt852> is equivalent to the following FF/Latch, which will be removed : <output_0> 
+INFO:Xst:2261 - The FF/Latch <q_1> in Unit <filt852> is equivalent to the following FF/Latch, which will be removed : <output_1> 
+INFO:Xst:2261 - The FF/Latch <q_2> in Unit <filt852> is equivalent to the following FF/Latch, which will be removed : <output_2> 
+INFO:Xst:2261 - The FF/Latch <q_3> in Unit <filt852> is equivalent to the following FF/Latch, which will be removed : <output_3> 
+INFO:Xst:2261 - The FF/Latch <q_4> in Unit <filt852> is equivalent to the following FF/Latch, which will be removed : <output_4> 
+INFO:Xst:2261 - The FF/Latch <q_5> in Unit <filt852> is equivalent to the following FF/Latch, which will be removed : <output_5> 
+INFO:Xst:2261 - The FF/Latch <q_6> in Unit <filt852> is equivalent to the following FF/Latch, which will be removed : <output_6> 
+INFO:Xst:2261 - The FF/Latch <q_7> in Unit <filt852> is equivalent to the following FF/Latch, which will be removed : <output_7> 
+INFO:Xst:2261 - The FF/Latch <q_8> in Unit <filt852> is equivalent to the following FF/Latch, which will be removed : <output_8> 
+INFO:Xst:2261 - The FF/Latch <q_9> in Unit <filt852> is equivalent to the following FF/Latch, which will be removed : <output_9> 
+INFO:Xst:2261 - The FF/Latch <q_10> in Unit <filt852> is equivalent to the following FF/Latch, which will be removed : <output_10> 
+INFO:Xst:2261 - The FF/Latch <q_11> in Unit <filt852> is equivalent to the following FF/Latch, which will be removed : <output_11> 
+INFO:Xst:2261 - The FF/Latch <q_12> in Unit <filt852> is equivalent to the following FF/Latch, which will be removed : <output_12> 
+INFO:Xst:2261 - The FF/Latch <q_13> in Unit <filt852> is equivalent to the following FF/Latch, which will be removed : <output_13> 
+INFO:Xst:2261 - The FF/Latch <q_14> in Unit <filt852> is equivalent to the following FF/Latch, which will be removed : <output_14> 
+INFO:Xst:2261 - The FF/Latch <q_15> in Unit <filt852> is equivalent to the following FF/Latch, which will be removed : <output_15> 
+INFO:Xst:2261 - The FF/Latch <q_20> in Unit <filt852> is equivalent to the following FF/Latch, which will be removed : <output_20> 
+INFO:Xst:2261 - The FF/Latch <q_16> in Unit <filt852> is equivalent to the following FF/Latch, which will be removed : <output_16> 
+INFO:Xst:2261 - The FF/Latch <q_21> in Unit <filt852> is equivalent to the following FF/Latch, which will be removed : <output_21> 
+INFO:Xst:2261 - The FF/Latch <q_17> in Unit <filt941> is equivalent to the following FF/Latch, which will be removed : <output_17> 
+INFO:Xst:2261 - The FF/Latch <q_22> in Unit <filt941> is equivalent to the following FF/Latch, which will be removed : <output_22> 
+INFO:Xst:2261 - The FF/Latch <q_18> in Unit <filt941> is equivalent to the following FF/Latch, which will be removed : <output_18> 
+INFO:Xst:2261 - The FF/Latch <q_23> in Unit <filt941> is equivalent to the following FF/Latch, which will be removed : <output_23> 
+INFO:Xst:2261 - The FF/Latch <q_19> in Unit <filt941> is equivalent to the following FF/Latch, which will be removed : <output_19> 
+INFO:Xst:2261 - The FF/Latch <q_24> in Unit <filt941> is equivalent to the following FF/Latch, which will be removed : <output_24> 
+INFO:Xst:2261 - The FF/Latch <q_25> in Unit <filt941> is equivalent to the following FF/Latch, which will be removed : <output_25> 
+INFO:Xst:2261 - The FF/Latch <q_30> in Unit <filt941> is equivalent to the following FF/Latch, which will be removed : <output_30> 
+INFO:Xst:2261 - The FF/Latch <q_26> in Unit <filt941> is equivalent to the following FF/Latch, which will be removed : <output_26> 
+INFO:Xst:2261 - The FF/Latch <q_31> in Unit <filt941> is equivalent to the following FF/Latch, which will be removed : <output_31> 
+INFO:Xst:2261 - The FF/Latch <q_27> in Unit <filt941> is equivalent to the following FF/Latch, which will be removed : <output_27> 
+INFO:Xst:2261 - The FF/Latch <q_28> in Unit <filt941> is equivalent to the following FF/Latch, which will be removed : <output_28> 
+INFO:Xst:2261 - The FF/Latch <q_29> in Unit <filt941> is equivalent to the following FF/Latch, which will be removed : <output_29> 
+INFO:Xst:2261 - The FF/Latch <q_0> in Unit <filt941> is equivalent to the following FF/Latch, which will be removed : <output_0> 
+INFO:Xst:2261 - The FF/Latch <q_1> in Unit <filt941> is equivalent to the following FF/Latch, which will be removed : <output_1> 
+INFO:Xst:2261 - The FF/Latch <q_2> in Unit <filt941> is equivalent to the following FF/Latch, which will be removed : <output_2> 
+INFO:Xst:2261 - The FF/Latch <q_3> in Unit <filt941> is equivalent to the following FF/Latch, which will be removed : <output_3> 
+INFO:Xst:2261 - The FF/Latch <q_4> in Unit <filt941> is equivalent to the following FF/Latch, which will be removed : <output_4> 
+INFO:Xst:2261 - The FF/Latch <q_5> in Unit <filt941> is equivalent to the following FF/Latch, which will be removed : <output_5> 
+INFO:Xst:2261 - The FF/Latch <q_6> in Unit <filt941> is equivalent to the following FF/Latch, which will be removed : <output_6> 
+INFO:Xst:2261 - The FF/Latch <q_7> in Unit <filt941> is equivalent to the following FF/Latch, which will be removed : <output_7> 
+INFO:Xst:2261 - The FF/Latch <q_8> in Unit <filt941> is equivalent to the following FF/Latch, which will be removed : <output_8> 
+INFO:Xst:2261 - The FF/Latch <q_9> in Unit <filt941> is equivalent to the following FF/Latch, which will be removed : <output_9> 
+INFO:Xst:2261 - The FF/Latch <q_10> in Unit <filt941> is equivalent to the following FF/Latch, which will be removed : <output_10> 
+INFO:Xst:2261 - The FF/Latch <q_11> in Unit <filt941> is equivalent to the following FF/Latch, which will be removed : <output_11> 
+INFO:Xst:2261 - The FF/Latch <q_12> in Unit <filt941> is equivalent to the following FF/Latch, which will be removed : <output_12> 
+INFO:Xst:2261 - The FF/Latch <q_13> in Unit <filt941> is equivalent to the following FF/Latch, which will be removed : <output_13> 
+INFO:Xst:2261 - The FF/Latch <q_14> in Unit <filt941> is equivalent to the following FF/Latch, which will be removed : <output_14> 
+INFO:Xst:2261 - The FF/Latch <q_15> in Unit <filt941> is equivalent to the following FF/Latch, which will be removed : <output_15> 
+INFO:Xst:2261 - The FF/Latch <q_20> in Unit <filt941> is equivalent to the following FF/Latch, which will be removed : <output_20> 
+INFO:Xst:2261 - The FF/Latch <q_16> in Unit <filt941> is equivalent to the following FF/Latch, which will be removed : <output_16> 
+INFO:Xst:2261 - The FF/Latch <q_21> in Unit <filt941> is equivalent to the following FF/Latch, which will be removed : <output_21> 
+INFO:Xst:2261 - The FF/Latch <q_17> in Unit <filt1209> is equivalent to the following FF/Latch, which will be removed : <output_17> 
+INFO:Xst:2261 - The FF/Latch <q_22> in Unit <filt1209> is equivalent to the following FF/Latch, which will be removed : <output_22> 
+INFO:Xst:2261 - The FF/Latch <q_18> in Unit <filt1209> is equivalent to the following FF/Latch, which will be removed : <output_18> 
+INFO:Xst:2261 - The FF/Latch <q_23> in Unit <filt1209> is equivalent to the following FF/Latch, which will be removed : <output_23> 
+INFO:Xst:2261 - The FF/Latch <q_19> in Unit <filt1209> is equivalent to the following FF/Latch, which will be removed : <output_19> 
+INFO:Xst:2261 - The FF/Latch <q_24> in Unit <filt1209> is equivalent to the following FF/Latch, which will be removed : <output_24> 
+INFO:Xst:2261 - The FF/Latch <q_25> in Unit <filt1209> is equivalent to the following FF/Latch, which will be removed : <output_25> 
+INFO:Xst:2261 - The FF/Latch <q_30> in Unit <filt1209> is equivalent to the following FF/Latch, which will be removed : <output_30> 
+INFO:Xst:2261 - The FF/Latch <q_26> in Unit <filt1209> is equivalent to the following FF/Latch, which will be removed : <output_26> 
+INFO:Xst:2261 - The FF/Latch <q_31> in Unit <filt1209> is equivalent to the following FF/Latch, which will be removed : <output_31> 
+INFO:Xst:2261 - The FF/Latch <q_27> in Unit <filt1209> is equivalent to the following FF/Latch, which will be removed : <output_27> 
+INFO:Xst:2261 - The FF/Latch <q_28> in Unit <filt1209> is equivalent to the following FF/Latch, which will be removed : <output_28> 
+INFO:Xst:2261 - The FF/Latch <q_29> in Unit <filt1209> is equivalent to the following FF/Latch, which will be removed : <output_29> 
+INFO:Xst:2261 - The FF/Latch <q_0> in Unit <filt1209> is equivalent to the following FF/Latch, which will be removed : <output_0> 
+INFO:Xst:2261 - The FF/Latch <q_1> in Unit <filt1209> is equivalent to the following FF/Latch, which will be removed : <output_1> 
+INFO:Xst:2261 - The FF/Latch <q_2> in Unit <filt1209> is equivalent to the following FF/Latch, which will be removed : <output_2> 
+INFO:Xst:2261 - The FF/Latch <q_3> in Unit <filt1209> is equivalent to the following FF/Latch, which will be removed : <output_3> 
+INFO:Xst:2261 - The FF/Latch <q_4> in Unit <filt1209> is equivalent to the following FF/Latch, which will be removed : <output_4> 
+INFO:Xst:2261 - The FF/Latch <q_5> in Unit <filt1209> is equivalent to the following FF/Latch, which will be removed : <output_5> 
+INFO:Xst:2261 - The FF/Latch <q_6> in Unit <filt1209> is equivalent to the following FF/Latch, which will be removed : <output_6> 
+INFO:Xst:2261 - The FF/Latch <q_7> in Unit <filt1209> is equivalent to the following FF/Latch, which will be removed : <output_7> 
+INFO:Xst:2261 - The FF/Latch <q_8> in Unit <filt1209> is equivalent to the following FF/Latch, which will be removed : <output_8> 
+INFO:Xst:2261 - The FF/Latch <q_9> in Unit <filt1209> is equivalent to the following FF/Latch, which will be removed : <output_9> 
+INFO:Xst:2261 - The FF/Latch <q_10> in Unit <filt1209> is equivalent to the following FF/Latch, which will be removed : <output_10> 
+INFO:Xst:2261 - The FF/Latch <q_11> in Unit <filt1209> is equivalent to the following FF/Latch, which will be removed : <output_11> 
+INFO:Xst:2261 - The FF/Latch <q_12> in Unit <filt1209> is equivalent to the following FF/Latch, which will be removed : <output_12> 
+INFO:Xst:2261 - The FF/Latch <q_13> in Unit <filt1209> is equivalent to the following FF/Latch, which will be removed : <output_13> 
+INFO:Xst:2261 - The FF/Latch <q_14> in Unit <filt1209> is equivalent to the following FF/Latch, which will be removed : <output_14> 
+INFO:Xst:2261 - The FF/Latch <q_15> in Unit <filt1209> is equivalent to the following FF/Latch, which will be removed : <output_15> 
+INFO:Xst:2261 - The FF/Latch <q_20> in Unit <filt1209> is equivalent to the following FF/Latch, which will be removed : <output_20> 
+INFO:Xst:2261 - The FF/Latch <q_16> in Unit <filt1209> is equivalent to the following FF/Latch, which will be removed : <output_16> 
+INFO:Xst:2261 - The FF/Latch <q_21> in Unit <filt1209> is equivalent to the following FF/Latch, which will be removed : <output_21> 
+INFO:Xst:2261 - The FF/Latch <q_17> in Unit <filt1336> is equivalent to the following FF/Latch, which will be removed : <output_17> 
+INFO:Xst:2261 - The FF/Latch <q_22> in Unit <filt1336> is equivalent to the following FF/Latch, which will be removed : <output_22> 
+INFO:Xst:2261 - The FF/Latch <q_18> in Unit <filt1336> is equivalent to the following FF/Latch, which will be removed : <output_18> 
+INFO:Xst:2261 - The FF/Latch <q_23> in Unit <filt1336> is equivalent to the following FF/Latch, which will be removed : <output_23> 
+INFO:Xst:2261 - The FF/Latch <q_19> in Unit <filt1336> is equivalent to the following FF/Latch, which will be removed : <output_19> 
+INFO:Xst:2261 - The FF/Latch <q_24> in Unit <filt1336> is equivalent to the following FF/Latch, which will be removed : <output_24> 
+INFO:Xst:2261 - The FF/Latch <q_25> in Unit <filt1336> is equivalent to the following FF/Latch, which will be removed : <output_25> 
+INFO:Xst:2261 - The FF/Latch <q_30> in Unit <filt1336> is equivalent to the following FF/Latch, which will be removed : <output_30> 
+INFO:Xst:2261 - The FF/Latch <q_26> in Unit <filt1336> is equivalent to the following FF/Latch, which will be removed : <output_26> 
+INFO:Xst:2261 - The FF/Latch <q_31> in Unit <filt1336> is equivalent to the following FF/Latch, which will be removed : <output_31> 
+INFO:Xst:2261 - The FF/Latch <q_27> in Unit <filt1336> is equivalent to the following FF/Latch, which will be removed : <output_27> 
+INFO:Xst:2261 - The FF/Latch <q_28> in Unit <filt1336> is equivalent to the following FF/Latch, which will be removed : <output_28> 
+INFO:Xst:2261 - The FF/Latch <q_29> in Unit <filt1336> is equivalent to the following FF/Latch, which will be removed : <output_29> 
+INFO:Xst:2261 - The FF/Latch <q_0> in Unit <filt1336> is equivalent to the following FF/Latch, which will be removed : <output_0> 
+INFO:Xst:2261 - The FF/Latch <q_1> in Unit <filt1336> is equivalent to the following FF/Latch, which will be removed : <output_1> 
+INFO:Xst:2261 - The FF/Latch <q_2> in Unit <filt1336> is equivalent to the following FF/Latch, which will be removed : <output_2> 
+INFO:Xst:2261 - The FF/Latch <q_3> in Unit <filt1336> is equivalent to the following FF/Latch, which will be removed : <output_3> 
+INFO:Xst:2261 - The FF/Latch <q_4> in Unit <filt1336> is equivalent to the following FF/Latch, which will be removed : <output_4> 
+INFO:Xst:2261 - The FF/Latch <q_5> in Unit <filt1336> is equivalent to the following FF/Latch, which will be removed : <output_5> 
+INFO:Xst:2261 - The FF/Latch <q_6> in Unit <filt1336> is equivalent to the following FF/Latch, which will be removed : <output_6> 
+INFO:Xst:2261 - The FF/Latch <q_7> in Unit <filt1336> is equivalent to the following FF/Latch, which will be removed : <output_7> 
+INFO:Xst:2261 - The FF/Latch <q_8> in Unit <filt1336> is equivalent to the following FF/Latch, which will be removed : <output_8> 
+INFO:Xst:2261 - The FF/Latch <q_9> in Unit <filt1336> is equivalent to the following FF/Latch, which will be removed : <output_9> 
+INFO:Xst:2261 - The FF/Latch <q_10> in Unit <filt1336> is equivalent to the following FF/Latch, which will be removed : <output_10> 
+INFO:Xst:2261 - The FF/Latch <q_11> in Unit <filt1336> is equivalent to the following FF/Latch, which will be removed : <output_11> 
+INFO:Xst:2261 - The FF/Latch <q_12> in Unit <filt1336> is equivalent to the following FF/Latch, which will be removed : <output_12> 
+INFO:Xst:2261 - The FF/Latch <q_13> in Unit <filt1336> is equivalent to the following FF/Latch, which will be removed : <output_13> 
+INFO:Xst:2261 - The FF/Latch <q_14> in Unit <filt1336> is equivalent to the following FF/Latch, which will be removed : <output_14> 
+INFO:Xst:2261 - The FF/Latch <q_15> in Unit <filt1336> is equivalent to the following FF/Latch, which will be removed : <output_15> 
+INFO:Xst:2261 - The FF/Latch <q_20> in Unit <filt1336> is equivalent to the following FF/Latch, which will be removed : <output_20> 
+INFO:Xst:2261 - The FF/Latch <q_16> in Unit <filt1336> is equivalent to the following FF/Latch, which will be removed : <output_16> 
+INFO:Xst:2261 - The FF/Latch <q_21> in Unit <filt1336> is equivalent to the following FF/Latch, which will be removed : <output_21> 
+INFO:Xst:2261 - The FF/Latch <q_17> in Unit <filt1477> is equivalent to the following FF/Latch, which will be removed : <output_17> 
+INFO:Xst:2261 - The FF/Latch <q_22> in Unit <filt1477> is equivalent to the following FF/Latch, which will be removed : <output_22> 
+INFO:Xst:2261 - The FF/Latch <q_18> in Unit <filt1477> is equivalent to the following FF/Latch, which will be removed : <output_18> 
+INFO:Xst:2261 - The FF/Latch <q_23> in Unit <filt1477> is equivalent to the following FF/Latch, which will be removed : <output_23> 
+INFO:Xst:2261 - The FF/Latch <q_19> in Unit <filt1477> is equivalent to the following FF/Latch, which will be removed : <output_19> 
+INFO:Xst:2261 - The FF/Latch <q_24> in Unit <filt1477> is equivalent to the following FF/Latch, which will be removed : <output_24> 
+INFO:Xst:2261 - The FF/Latch <q_25> in Unit <filt1477> is equivalent to the following FF/Latch, which will be removed : <output_25> 
+INFO:Xst:2261 - The FF/Latch <q_30> in Unit <filt1477> is equivalent to the following FF/Latch, which will be removed : <output_30> 
+INFO:Xst:2261 - The FF/Latch <q_26> in Unit <filt1477> is equivalent to the following FF/Latch, which will be removed : <output_26> 
+INFO:Xst:2261 - The FF/Latch <q_31> in Unit <filt1477> is equivalent to the following FF/Latch, which will be removed : <output_31> 
+INFO:Xst:2261 - The FF/Latch <q_27> in Unit <filt1477> is equivalent to the following FF/Latch, which will be removed : <output_27> 
+INFO:Xst:2261 - The FF/Latch <q_28> in Unit <filt1477> is equivalent to the following FF/Latch, which will be removed : <output_28> 
+INFO:Xst:2261 - The FF/Latch <q_29> in Unit <filt1477> is equivalent to the following FF/Latch, which will be removed : <output_29> 
+INFO:Xst:2261 - The FF/Latch <q_0> in Unit <filt1477> is equivalent to the following FF/Latch, which will be removed : <output_0> 
+INFO:Xst:2261 - The FF/Latch <q_1> in Unit <filt1477> is equivalent to the following FF/Latch, which will be removed : <output_1> 
+INFO:Xst:2261 - The FF/Latch <q_2> in Unit <filt1477> is equivalent to the following FF/Latch, which will be removed : <output_2> 
+INFO:Xst:2261 - The FF/Latch <q_3> in Unit <filt1477> is equivalent to the following FF/Latch, which will be removed : <output_3> 
+INFO:Xst:2261 - The FF/Latch <q_4> in Unit <filt1477> is equivalent to the following FF/Latch, which will be removed : <output_4> 
+INFO:Xst:2261 - The FF/Latch <q_5> in Unit <filt1477> is equivalent to the following FF/Latch, which will be removed : <output_5> 
+INFO:Xst:2261 - The FF/Latch <q_6> in Unit <filt1477> is equivalent to the following FF/Latch, which will be removed : <output_6> 
+INFO:Xst:2261 - The FF/Latch <q_7> in Unit <filt1477> is equivalent to the following FF/Latch, which will be removed : <output_7> 
+INFO:Xst:2261 - The FF/Latch <q_8> in Unit <filt1477> is equivalent to the following FF/Latch, which will be removed : <output_8> 
+INFO:Xst:2261 - The FF/Latch <q_9> in Unit <filt1477> is equivalent to the following FF/Latch, which will be removed : <output_9> 
+INFO:Xst:2261 - The FF/Latch <q_10> in Unit <filt1477> is equivalent to the following FF/Latch, which will be removed : <output_10> 
+INFO:Xst:2261 - The FF/Latch <q_11> in Unit <filt1477> is equivalent to the following FF/Latch, which will be removed : <output_11> 
+INFO:Xst:2261 - The FF/Latch <q_12> in Unit <filt1477> is equivalent to the following FF/Latch, which will be removed : <output_12> 
+INFO:Xst:2261 - The FF/Latch <q_13> in Unit <filt1477> is equivalent to the following FF/Latch, which will be removed : <output_13> 
+INFO:Xst:2261 - The FF/Latch <q_14> in Unit <filt1477> is equivalent to the following FF/Latch, which will be removed : <output_14> 
+INFO:Xst:2261 - The FF/Latch <q_15> in Unit <filt1477> is equivalent to the following FF/Latch, which will be removed : <output_15> 
+INFO:Xst:2261 - The FF/Latch <q_20> in Unit <filt1477> is equivalent to the following FF/Latch, which will be removed : <output_20> 
+INFO:Xst:2261 - The FF/Latch <q_16> in Unit <filt1477> is equivalent to the following FF/Latch, which will be removed : <output_16> 
+INFO:Xst:2261 - The FF/Latch <q_21> in Unit <filt1477> is equivalent to the following FF/Latch, which will be removed : <output_21> 
+INFO:Xst:2261 - The FF/Latch <q_17> in Unit <filt1633> is equivalent to the following FF/Latch, which will be removed : <output_17> 
+INFO:Xst:2261 - The FF/Latch <q_22> in Unit <filt1633> is equivalent to the following FF/Latch, which will be removed : <output_22> 
+INFO:Xst:2261 - The FF/Latch <q_18> in Unit <filt1633> is equivalent to the following FF/Latch, which will be removed : <output_18> 
+INFO:Xst:2261 - The FF/Latch <q_23> in Unit <filt1633> is equivalent to the following FF/Latch, which will be removed : <output_23> 
+INFO:Xst:2261 - The FF/Latch <q_19> in Unit <filt1633> is equivalent to the following FF/Latch, which will be removed : <output_19> 
+INFO:Xst:2261 - The FF/Latch <q_24> in Unit <filt1633> is equivalent to the following FF/Latch, which will be removed : <output_24> 
+INFO:Xst:2261 - The FF/Latch <q_25> in Unit <filt1633> is equivalent to the following FF/Latch, which will be removed : <output_25> 
+INFO:Xst:2261 - The FF/Latch <q_30> in Unit <filt1633> is equivalent to the following FF/Latch, which will be removed : <output_30> 
+INFO:Xst:2261 - The FF/Latch <q_26> in Unit <filt1633> is equivalent to the following FF/Latch, which will be removed : <output_26> 
+INFO:Xst:2261 - The FF/Latch <q_31> in Unit <filt1633> is equivalent to the following FF/Latch, which will be removed : <output_31> 
+INFO:Xst:2261 - The FF/Latch <q_27> in Unit <filt1633> is equivalent to the following FF/Latch, which will be removed : <output_27> 
+INFO:Xst:2261 - The FF/Latch <q_28> in Unit <filt1633> is equivalent to the following FF/Latch, which will be removed : <output_28> 
+INFO:Xst:2261 - The FF/Latch <q_29> in Unit <filt1633> is equivalent to the following FF/Latch, which will be removed : <output_29> 
+INFO:Xst:2261 - The FF/Latch <q_0> in Unit <filt1633> is equivalent to the following FF/Latch, which will be removed : <output_0> 
+INFO:Xst:2261 - The FF/Latch <q_1> in Unit <filt1633> is equivalent to the following FF/Latch, which will be removed : <output_1> 
+INFO:Xst:2261 - The FF/Latch <q_2> in Unit <filt1633> is equivalent to the following FF/Latch, which will be removed : <output_2> 
+INFO:Xst:2261 - The FF/Latch <q_3> in Unit <filt1633> is equivalent to the following FF/Latch, which will be removed : <output_3> 
+INFO:Xst:2261 - The FF/Latch <q_4> in Unit <filt1633> is equivalent to the following FF/Latch, which will be removed : <output_4> 
+INFO:Xst:2261 - The FF/Latch <q_5> in Unit <filt1633> is equivalent to the following FF/Latch, which will be removed : <output_5> 
+INFO:Xst:2261 - The FF/Latch <q_6> in Unit <filt1633> is equivalent to the following FF/Latch, which will be removed : <output_6> 
+INFO:Xst:2261 - The FF/Latch <q_7> in Unit <filt1633> is equivalent to the following FF/Latch, which will be removed : <output_7> 
+INFO:Xst:2261 - The FF/Latch <q_8> in Unit <filt1633> is equivalent to the following FF/Latch, which will be removed : <output_8> 
+INFO:Xst:2261 - The FF/Latch <q_9> in Unit <filt1633> is equivalent to the following FF/Latch, which will be removed : <output_9> 
+INFO:Xst:2261 - The FF/Latch <q_10> in Unit <filt1633> is equivalent to the following FF/Latch, which will be removed : <output_10> 
+INFO:Xst:2261 - The FF/Latch <q_11> in Unit <filt1633> is equivalent to the following FF/Latch, which will be removed : <output_11> 
+INFO:Xst:2261 - The FF/Latch <q_12> in Unit <filt1633> is equivalent to the following FF/Latch, which will be removed : <output_12> 
+INFO:Xst:2261 - The FF/Latch <q_13> in Unit <filt1633> is equivalent to the following FF/Latch, which will be removed : <output_13> 
+INFO:Xst:2261 - The FF/Latch <q_14> in Unit <filt1633> is equivalent to the following FF/Latch, which will be removed : <output_14> 
+INFO:Xst:2261 - The FF/Latch <q_15> in Unit <filt1633> is equivalent to the following FF/Latch, which will be removed : <output_15> 
+INFO:Xst:2261 - The FF/Latch <q_20> in Unit <filt1633> is equivalent to the following FF/Latch, which will be removed : <output_20> 
+INFO:Xst:2261 - The FF/Latch <q_16> in Unit <filt1633> is equivalent to the following FF/Latch, which will be removed : <output_16> 
+INFO:Xst:2261 - The FF/Latch <q_21> in Unit <filt1633> is equivalent to the following FF/Latch, which will be removed : <output_21> 
+
+Synthesizing (advanced) Unit <counter205>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <counter205> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 40
+ 32x16-bit multiplier                                  : 3
+ 32x17-bit multiplier                                  : 16
+ 32x18-bit multiplier                                  : 5
+ 32x32-bit multiplier                                  : 16
+# Adders/Subtractors                                   : 34
+ 32-bit adder                                          : 18
+ 32-bit addsub                                         : 8
+ 32-bit subtractor                                     : 8
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 1104
+ Flip-Flops                                            : 1104
+# Comparators                                          : 9
+ 32-bit comparator greater                             : 8
+ 8-bit comparator equal                                : 1
+# Multiplexers                                         : 21
+ 32-bit 2-to-1 multiplexer                             : 21
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <q_17> in Unit <filtro697> is equivalent to the following FF/Latch, which will be removed : <output_17> 
+INFO:Xst:2261 - The FF/Latch <q_22> in Unit <filtro697> is equivalent to the following FF/Latch, which will be removed : <output_22> 
+INFO:Xst:2261 - The FF/Latch <q_18> in Unit <filtro697> is equivalent to the following FF/Latch, which will be removed : <output_18> 
+INFO:Xst:2261 - The FF/Latch <q_23> in Unit <filtro697> is equivalent to the following FF/Latch, which will be removed : <output_23> 
+INFO:Xst:2261 - The FF/Latch <q_19> in Unit <filtro697> is equivalent to the following FF/Latch, which will be removed : <output_19> 
+INFO:Xst:2261 - The FF/Latch <q_24> in Unit <filtro697> is equivalent to the following FF/Latch, which will be removed : <output_24> 
+INFO:Xst:2261 - The FF/Latch <q_25> in Unit <filtro697> is equivalent to the following FF/Latch, which will be removed : <output_25> 
+INFO:Xst:2261 - The FF/Latch <q_30> in Unit <filtro697> is equivalent to the following FF/Latch, which will be removed : <output_30> 
+INFO:Xst:2261 - The FF/Latch <q_26> in Unit <filtro697> is equivalent to the following FF/Latch, which will be removed : <output_26> 
+INFO:Xst:2261 - The FF/Latch <q_31> in Unit <filtro697> is equivalent to the following FF/Latch, which will be removed : <output_31> 
+INFO:Xst:2261 - The FF/Latch <q_27> in Unit <filtro697> is equivalent to the following FF/Latch, which will be removed : <output_27> 
+INFO:Xst:2261 - The FF/Latch <q_28> in Unit <filtro697> is equivalent to the following FF/Latch, which will be removed : <output_28> 
+INFO:Xst:2261 - The FF/Latch <q_29> in Unit <filtro697> is equivalent to the following FF/Latch, which will be removed : <output_29> 
+INFO:Xst:2261 - The FF/Latch <q_0> in Unit <filtro697> is equivalent to the following FF/Latch, which will be removed : <output_0> 
+INFO:Xst:2261 - The FF/Latch <q_1> in Unit <filtro697> is equivalent to the following FF/Latch, which will be removed : <output_1> 
+INFO:Xst:2261 - The FF/Latch <q_2> in Unit <filtro697> is equivalent to the following FF/Latch, which will be removed : <output_2> 
+INFO:Xst:2261 - The FF/Latch <q_3> in Unit <filtro697> is equivalent to the following FF/Latch, which will be removed : <output_3> 
+INFO:Xst:2261 - The FF/Latch <q_4> in Unit <filtro697> is equivalent to the following FF/Latch, which will be removed : <output_4> 
+INFO:Xst:2261 - The FF/Latch <q_5> in Unit <filtro697> is equivalent to the following FF/Latch, which will be removed : <output_5> 
+INFO:Xst:2261 - The FF/Latch <q_6> in Unit <filtro697> is equivalent to the following FF/Latch, which will be removed : <output_6> 
+INFO:Xst:2261 - The FF/Latch <q_7> in Unit <filtro697> is equivalent to the following FF/Latch, which will be removed : <output_7> 
+INFO:Xst:2261 - The FF/Latch <q_8> in Unit <filtro697> is equivalent to the following FF/Latch, which will be removed : <output_8> 
+INFO:Xst:2261 - The FF/Latch <q_9> in Unit <filtro697> is equivalent to the following FF/Latch, which will be removed : <output_9> 
+INFO:Xst:2261 - The FF/Latch <q_10> in Unit <filtro697> is equivalent to the following FF/Latch, which will be removed : <output_10> 
+INFO:Xst:2261 - The FF/Latch <q_11> in Unit <filtro697> is equivalent to the following FF/Latch, which will be removed : <output_11> 
+INFO:Xst:2261 - The FF/Latch <q_12> in Unit <filtro697> is equivalent to the following FF/Latch, which will be removed : <output_12> 
+INFO:Xst:2261 - The FF/Latch <q_13> in Unit <filtro697> is equivalent to the following FF/Latch, which will be removed : <output_13> 
+INFO:Xst:2261 - The FF/Latch <q_14> in Unit <filtro697> is equivalent to the following FF/Latch, which will be removed : <output_14> 
+INFO:Xst:2261 - The FF/Latch <q_15> in Unit <filtro697> is equivalent to the following FF/Latch, which will be removed : <output_15> 
+INFO:Xst:2261 - The FF/Latch <q_20> in Unit <filtro697> is equivalent to the following FF/Latch, which will be removed : <output_20> 
+INFO:Xst:2261 - The FF/Latch <q_16> in Unit <filtro697> is equivalent to the following FF/Latch, which will be removed : <output_16> 
+INFO:Xst:2261 - The FF/Latch <q_21> in Unit <filtro697> is equivalent to the following FF/Latch, which will be removed : <output_21> 
+INFO:Xst:2261 - The FF/Latch <q_17> in Unit <filtro770> is equivalent to the following FF/Latch, which will be removed : <output_17> 
+INFO:Xst:2261 - The FF/Latch <q_22> in Unit <filtro770> is equivalent to the following FF/Latch, which will be removed : <output_22> 
+INFO:Xst:2261 - The FF/Latch <q_18> in Unit <filtro770> is equivalent to the following FF/Latch, which will be removed : <output_18> 
+INFO:Xst:2261 - The FF/Latch <q_23> in Unit <filtro770> is equivalent to the following FF/Latch, which will be removed : <output_23> 
+INFO:Xst:2261 - The FF/Latch <q_19> in Unit <filtro770> is equivalent to the following FF/Latch, which will be removed : <output_19> 
+INFO:Xst:2261 - The FF/Latch <q_24> in Unit <filtro770> is equivalent to the following FF/Latch, which will be removed : <output_24> 
+INFO:Xst:2261 - The FF/Latch <q_25> in Unit <filtro770> is equivalent to the following FF/Latch, which will be removed : <output_25> 
+INFO:Xst:2261 - The FF/Latch <q_30> in Unit <filtro770> is equivalent to the following FF/Latch, which will be removed : <output_30> 
+INFO:Xst:2261 - The FF/Latch <q_26> in Unit <filtro770> is equivalent to the following FF/Latch, which will be removed : <output_26> 
+INFO:Xst:2261 - The FF/Latch <q_31> in Unit <filtro770> is equivalent to the following FF/Latch, which will be removed : <output_31> 
+INFO:Xst:2261 - The FF/Latch <q_27> in Unit <filtro770> is equivalent to the following FF/Latch, which will be removed : <output_27> 
+INFO:Xst:2261 - The FF/Latch <q_28> in Unit <filtro770> is equivalent to the following FF/Latch, which will be removed : <output_28> 
+INFO:Xst:2261 - The FF/Latch <q_29> in Unit <filtro770> is equivalent to the following FF/Latch, which will be removed : <output_29> 
+INFO:Xst:2261 - The FF/Latch <q_0> in Unit <filtro770> is equivalent to the following FF/Latch, which will be removed : <output_0> 
+INFO:Xst:2261 - The FF/Latch <q_1> in Unit <filtro770> is equivalent to the following FF/Latch, which will be removed : <output_1> 
+INFO:Xst:2261 - The FF/Latch <q_2> in Unit <filtro770> is equivalent to the following FF/Latch, which will be removed : <output_2> 
+INFO:Xst:2261 - The FF/Latch <q_3> in Unit <filtro770> is equivalent to the following FF/Latch, which will be removed : <output_3> 
+INFO:Xst:2261 - The FF/Latch <q_4> in Unit <filtro770> is equivalent to the following FF/Latch, which will be removed : <output_4> 
+INFO:Xst:2261 - The FF/Latch <q_5> in Unit <filtro770> is equivalent to the following FF/Latch, which will be removed : <output_5> 
+INFO:Xst:2261 - The FF/Latch <q_6> in Unit <filtro770> is equivalent to the following FF/Latch, which will be removed : <output_6> 
+INFO:Xst:2261 - The FF/Latch <q_7> in Unit <filtro770> is equivalent to the following FF/Latch, which will be removed : <output_7> 
+INFO:Xst:2261 - The FF/Latch <q_8> in Unit <filtro770> is equivalent to the following FF/Latch, which will be removed : <output_8> 
+INFO:Xst:2261 - The FF/Latch <q_9> in Unit <filtro770> is equivalent to the following FF/Latch, which will be removed : <output_9> 
+INFO:Xst:2261 - The FF/Latch <q_10> in Unit <filtro770> is equivalent to the following FF/Latch, which will be removed : <output_10> 
+INFO:Xst:2261 - The FF/Latch <q_11> in Unit <filtro770> is equivalent to the following FF/Latch, which will be removed : <output_11> 
+INFO:Xst:2261 - The FF/Latch <q_12> in Unit <filtro770> is equivalent to the following FF/Latch, which will be removed : <output_12> 
+INFO:Xst:2261 - The FF/Latch <q_13> in Unit <filtro770> is equivalent to the following FF/Latch, which will be removed : <output_13> 
+INFO:Xst:2261 - The FF/Latch <q_14> in Unit <filtro770> is equivalent to the following FF/Latch, which will be removed : <output_14> 
+INFO:Xst:2261 - The FF/Latch <q_15> in Unit <filtro770> is equivalent to the following FF/Latch, which will be removed : <output_15> 
+INFO:Xst:2261 - The FF/Latch <q_20> in Unit <filtro770> is equivalent to the following FF/Latch, which will be removed : <output_20> 
+INFO:Xst:2261 - The FF/Latch <q_16> in Unit <filtro770> is equivalent to the following FF/Latch, which will be removed : <output_16> 
+INFO:Xst:2261 - The FF/Latch <q_21> in Unit <filtro770> is equivalent to the following FF/Latch, which will be removed : <output_21> 
+INFO:Xst:2261 - The FF/Latch <q_17> in Unit <filtro852> is equivalent to the following FF/Latch, which will be removed : <output_17> 
+INFO:Xst:2261 - The FF/Latch <q_22> in Unit <filtro852> is equivalent to the following FF/Latch, which will be removed : <output_22> 
+INFO:Xst:2261 - The FF/Latch <q_18> in Unit <filtro852> is equivalent to the following FF/Latch, which will be removed : <output_18> 
+INFO:Xst:2261 - The FF/Latch <q_23> in Unit <filtro852> is equivalent to the following FF/Latch, which will be removed : <output_23> 
+INFO:Xst:2261 - The FF/Latch <q_19> in Unit <filtro852> is equivalent to the following FF/Latch, which will be removed : <output_19> 
+INFO:Xst:2261 - The FF/Latch <q_24> in Unit <filtro852> is equivalent to the following FF/Latch, which will be removed : <output_24> 
+INFO:Xst:2261 - The FF/Latch <q_25> in Unit <filtro852> is equivalent to the following FF/Latch, which will be removed : <output_25> 
+INFO:Xst:2261 - The FF/Latch <q_30> in Unit <filtro852> is equivalent to the following FF/Latch, which will be removed : <output_30> 
+INFO:Xst:2261 - The FF/Latch <q_26> in Unit <filtro852> is equivalent to the following FF/Latch, which will be removed : <output_26> 
+INFO:Xst:2261 - The FF/Latch <q_31> in Unit <filtro852> is equivalent to the following FF/Latch, which will be removed : <output_31> 
+INFO:Xst:2261 - The FF/Latch <q_27> in Unit <filtro852> is equivalent to the following FF/Latch, which will be removed : <output_27> 
+INFO:Xst:2261 - The FF/Latch <q_28> in Unit <filtro852> is equivalent to the following FF/Latch, which will be removed : <output_28> 
+INFO:Xst:2261 - The FF/Latch <q_29> in Unit <filtro852> is equivalent to the following FF/Latch, which will be removed : <output_29> 
+INFO:Xst:2261 - The FF/Latch <q_0> in Unit <filtro852> is equivalent to the following FF/Latch, which will be removed : <output_0> 
+INFO:Xst:2261 - The FF/Latch <q_1> in Unit <filtro852> is equivalent to the following FF/Latch, which will be removed : <output_1> 
+INFO:Xst:2261 - The FF/Latch <q_2> in Unit <filtro852> is equivalent to the following FF/Latch, which will be removed : <output_2> 
+INFO:Xst:2261 - The FF/Latch <q_3> in Unit <filtro852> is equivalent to the following FF/Latch, which will be removed : <output_3> 
+INFO:Xst:2261 - The FF/Latch <q_4> in Unit <filtro852> is equivalent to the following FF/Latch, which will be removed : <output_4> 
+INFO:Xst:2261 - The FF/Latch <q_5> in Unit <filtro852> is equivalent to the following FF/Latch, which will be removed : <output_5> 
+INFO:Xst:2261 - The FF/Latch <q_6> in Unit <filtro852> is equivalent to the following FF/Latch, which will be removed : <output_6> 
+INFO:Xst:2261 - The FF/Latch <q_7> in Unit <filtro852> is equivalent to the following FF/Latch, which will be removed : <output_7> 
+INFO:Xst:2261 - The FF/Latch <q_8> in Unit <filtro852> is equivalent to the following FF/Latch, which will be removed : <output_8> 
+INFO:Xst:2261 - The FF/Latch <q_9> in Unit <filtro852> is equivalent to the following FF/Latch, which will be removed : <output_9> 
+INFO:Xst:2261 - The FF/Latch <q_10> in Unit <filtro852> is equivalent to the following FF/Latch, which will be removed : <output_10> 
+INFO:Xst:2261 - The FF/Latch <q_11> in Unit <filtro852> is equivalent to the following FF/Latch, which will be removed : <output_11> 
+INFO:Xst:2261 - The FF/Latch <q_12> in Unit <filtro852> is equivalent to the following FF/Latch, which will be removed : <output_12> 
+INFO:Xst:2261 - The FF/Latch <q_13> in Unit <filtro852> is equivalent to the following FF/Latch, which will be removed : <output_13> 
+INFO:Xst:2261 - The FF/Latch <q_14> in Unit <filtro852> is equivalent to the following FF/Latch, which will be removed : <output_14> 
+INFO:Xst:2261 - The FF/Latch <q_15> in Unit <filtro852> is equivalent to the following FF/Latch, which will be removed : <output_15> 
+INFO:Xst:2261 - The FF/Latch <q_20> in Unit <filtro852> is equivalent to the following FF/Latch, which will be removed : <output_20> 
+INFO:Xst:2261 - The FF/Latch <q_16> in Unit <filtro852> is equivalent to the following FF/Latch, which will be removed : <output_16> 
+INFO:Xst:2261 - The FF/Latch <q_21> in Unit <filtro852> is equivalent to the following FF/Latch, which will be removed : <output_21> 
+INFO:Xst:2261 - The FF/Latch <q_17> in Unit <filtro941> is equivalent to the following FF/Latch, which will be removed : <output_17> 
+INFO:Xst:2261 - The FF/Latch <q_22> in Unit <filtro941> is equivalent to the following FF/Latch, which will be removed : <output_22> 
+INFO:Xst:2261 - The FF/Latch <q_18> in Unit <filtro941> is equivalent to the following FF/Latch, which will be removed : <output_18> 
+INFO:Xst:2261 - The FF/Latch <q_23> in Unit <filtro941> is equivalent to the following FF/Latch, which will be removed : <output_23> 
+INFO:Xst:2261 - The FF/Latch <q_19> in Unit <filtro941> is equivalent to the following FF/Latch, which will be removed : <output_19> 
+INFO:Xst:2261 - The FF/Latch <q_24> in Unit <filtro941> is equivalent to the following FF/Latch, which will be removed : <output_24> 
+INFO:Xst:2261 - The FF/Latch <q_25> in Unit <filtro941> is equivalent to the following FF/Latch, which will be removed : <output_25> 
+INFO:Xst:2261 - The FF/Latch <q_30> in Unit <filtro941> is equivalent to the following FF/Latch, which will be removed : <output_30> 
+INFO:Xst:2261 - The FF/Latch <q_26> in Unit <filtro941> is equivalent to the following FF/Latch, which will be removed : <output_26> 
+INFO:Xst:2261 - The FF/Latch <q_31> in Unit <filtro941> is equivalent to the following FF/Latch, which will be removed : <output_31> 
+INFO:Xst:2261 - The FF/Latch <q_27> in Unit <filtro941> is equivalent to the following FF/Latch, which will be removed : <output_27> 
+INFO:Xst:2261 - The FF/Latch <q_28> in Unit <filtro941> is equivalent to the following FF/Latch, which will be removed : <output_28> 
+INFO:Xst:2261 - The FF/Latch <q_29> in Unit <filtro941> is equivalent to the following FF/Latch, which will be removed : <output_29> 
+INFO:Xst:2261 - The FF/Latch <q_0> in Unit <filtro941> is equivalent to the following FF/Latch, which will be removed : <output_0> 
+INFO:Xst:2261 - The FF/Latch <q_1> in Unit <filtro941> is equivalent to the following FF/Latch, which will be removed : <output_1> 
+INFO:Xst:2261 - The FF/Latch <q_2> in Unit <filtro941> is equivalent to the following FF/Latch, which will be removed : <output_2> 
+INFO:Xst:2261 - The FF/Latch <q_3> in Unit <filtro941> is equivalent to the following FF/Latch, which will be removed : <output_3> 
+INFO:Xst:2261 - The FF/Latch <q_4> in Unit <filtro941> is equivalent to the following FF/Latch, which will be removed : <output_4> 
+INFO:Xst:2261 - The FF/Latch <q_5> in Unit <filtro941> is equivalent to the following FF/Latch, which will be removed : <output_5> 
+INFO:Xst:2261 - The FF/Latch <q_6> in Unit <filtro941> is equivalent to the following FF/Latch, which will be removed : <output_6> 
+INFO:Xst:2261 - The FF/Latch <q_7> in Unit <filtro941> is equivalent to the following FF/Latch, which will be removed : <output_7> 
+INFO:Xst:2261 - The FF/Latch <q_8> in Unit <filtro941> is equivalent to the following FF/Latch, which will be removed : <output_8> 
+INFO:Xst:2261 - The FF/Latch <q_9> in Unit <filtro941> is equivalent to the following FF/Latch, which will be removed : <output_9> 
+INFO:Xst:2261 - The FF/Latch <q_10> in Unit <filtro941> is equivalent to the following FF/Latch, which will be removed : <output_10> 
+INFO:Xst:2261 - The FF/Latch <q_11> in Unit <filtro941> is equivalent to the following FF/Latch, which will be removed : <output_11> 
+INFO:Xst:2261 - The FF/Latch <q_12> in Unit <filtro941> is equivalent to the following FF/Latch, which will be removed : <output_12> 
+INFO:Xst:2261 - The FF/Latch <q_13> in Unit <filtro941> is equivalent to the following FF/Latch, which will be removed : <output_13> 
+INFO:Xst:2261 - The FF/Latch <q_14> in Unit <filtro941> is equivalent to the following FF/Latch, which will be removed : <output_14> 
+INFO:Xst:2261 - The FF/Latch <q_15> in Unit <filtro941> is equivalent to the following FF/Latch, which will be removed : <output_15> 
+INFO:Xst:2261 - The FF/Latch <q_20> in Unit <filtro941> is equivalent to the following FF/Latch, which will be removed : <output_20> 
+INFO:Xst:2261 - The FF/Latch <q_16> in Unit <filtro941> is equivalent to the following FF/Latch, which will be removed : <output_16> 
+INFO:Xst:2261 - The FF/Latch <q_21> in Unit <filtro941> is equivalent to the following FF/Latch, which will be removed : <output_21> 
+INFO:Xst:2261 - The FF/Latch <q_17> in Unit <filtro1209> is equivalent to the following FF/Latch, which will be removed : <output_17> 
+INFO:Xst:2261 - The FF/Latch <q_22> in Unit <filtro1209> is equivalent to the following FF/Latch, which will be removed : <output_22> 
+INFO:Xst:2261 - The FF/Latch <q_18> in Unit <filtro1209> is equivalent to the following FF/Latch, which will be removed : <output_18> 
+INFO:Xst:2261 - The FF/Latch <q_23> in Unit <filtro1209> is equivalent to the following FF/Latch, which will be removed : <output_23> 
+INFO:Xst:2261 - The FF/Latch <q_19> in Unit <filtro1209> is equivalent to the following FF/Latch, which will be removed : <output_19> 
+INFO:Xst:2261 - The FF/Latch <q_24> in Unit <filtro1209> is equivalent to the following FF/Latch, which will be removed : <output_24> 
+INFO:Xst:2261 - The FF/Latch <q_25> in Unit <filtro1209> is equivalent to the following FF/Latch, which will be removed : <output_25> 
+INFO:Xst:2261 - The FF/Latch <q_30> in Unit <filtro1209> is equivalent to the following FF/Latch, which will be removed : <output_30> 
+INFO:Xst:2261 - The FF/Latch <q_26> in Unit <filtro1209> is equivalent to the following FF/Latch, which will be removed : <output_26> 
+INFO:Xst:2261 - The FF/Latch <q_31> in Unit <filtro1209> is equivalent to the following FF/Latch, which will be removed : <output_31> 
+INFO:Xst:2261 - The FF/Latch <q_27> in Unit <filtro1209> is equivalent to the following FF/Latch, which will be removed : <output_27> 
+INFO:Xst:2261 - The FF/Latch <q_28> in Unit <filtro1209> is equivalent to the following FF/Latch, which will be removed : <output_28> 
+INFO:Xst:2261 - The FF/Latch <q_29> in Unit <filtro1209> is equivalent to the following FF/Latch, which will be removed : <output_29> 
+INFO:Xst:2261 - The FF/Latch <q_0> in Unit <filtro1209> is equivalent to the following FF/Latch, which will be removed : <output_0> 
+INFO:Xst:2261 - The FF/Latch <q_1> in Unit <filtro1209> is equivalent to the following FF/Latch, which will be removed : <output_1> 
+INFO:Xst:2261 - The FF/Latch <q_2> in Unit <filtro1209> is equivalent to the following FF/Latch, which will be removed : <output_2> 
+INFO:Xst:2261 - The FF/Latch <q_3> in Unit <filtro1209> is equivalent to the following FF/Latch, which will be removed : <output_3> 
+INFO:Xst:2261 - The FF/Latch <q_4> in Unit <filtro1209> is equivalent to the following FF/Latch, which will be removed : <output_4> 
+INFO:Xst:2261 - The FF/Latch <q_5> in Unit <filtro1209> is equivalent to the following FF/Latch, which will be removed : <output_5> 
+INFO:Xst:2261 - The FF/Latch <q_6> in Unit <filtro1209> is equivalent to the following FF/Latch, which will be removed : <output_6> 
+INFO:Xst:2261 - The FF/Latch <q_7> in Unit <filtro1209> is equivalent to the following FF/Latch, which will be removed : <output_7> 
+INFO:Xst:2261 - The FF/Latch <q_8> in Unit <filtro1209> is equivalent to the following FF/Latch, which will be removed : <output_8> 
+INFO:Xst:2261 - The FF/Latch <q_9> in Unit <filtro1209> is equivalent to the following FF/Latch, which will be removed : <output_9> 
+INFO:Xst:2261 - The FF/Latch <q_10> in Unit <filtro1209> is equivalent to the following FF/Latch, which will be removed : <output_10> 
+INFO:Xst:2261 - The FF/Latch <q_11> in Unit <filtro1209> is equivalent to the following FF/Latch, which will be removed : <output_11> 
+INFO:Xst:2261 - The FF/Latch <q_12> in Unit <filtro1209> is equivalent to the following FF/Latch, which will be removed : <output_12> 
+INFO:Xst:2261 - The FF/Latch <q_13> in Unit <filtro1209> is equivalent to the following FF/Latch, which will be removed : <output_13> 
+INFO:Xst:2261 - The FF/Latch <q_14> in Unit <filtro1209> is equivalent to the following FF/Latch, which will be removed : <output_14> 
+INFO:Xst:2261 - The FF/Latch <q_15> in Unit <filtro1209> is equivalent to the following FF/Latch, which will be removed : <output_15> 
+INFO:Xst:2261 - The FF/Latch <q_20> in Unit <filtro1209> is equivalent to the following FF/Latch, which will be removed : <output_20> 
+INFO:Xst:2261 - The FF/Latch <q_16> in Unit <filtro1209> is equivalent to the following FF/Latch, which will be removed : <output_16> 
+INFO:Xst:2261 - The FF/Latch <q_21> in Unit <filtro1209> is equivalent to the following FF/Latch, which will be removed : <output_21> 
+INFO:Xst:2261 - The FF/Latch <q_17> in Unit <filtro1336> is equivalent to the following FF/Latch, which will be removed : <output_17> 
+INFO:Xst:2261 - The FF/Latch <q_22> in Unit <filtro1336> is equivalent to the following FF/Latch, which will be removed : <output_22> 
+INFO:Xst:2261 - The FF/Latch <q_18> in Unit <filtro1336> is equivalent to the following FF/Latch, which will be removed : <output_18> 
+INFO:Xst:2261 - The FF/Latch <q_23> in Unit <filtro1336> is equivalent to the following FF/Latch, which will be removed : <output_23> 
+INFO:Xst:2261 - The FF/Latch <q_19> in Unit <filtro1336> is equivalent to the following FF/Latch, which will be removed : <output_19> 
+INFO:Xst:2261 - The FF/Latch <q_24> in Unit <filtro1336> is equivalent to the following FF/Latch, which will be removed : <output_24> 
+INFO:Xst:2261 - The FF/Latch <q_25> in Unit <filtro1336> is equivalent to the following FF/Latch, which will be removed : <output_25> 
+INFO:Xst:2261 - The FF/Latch <q_30> in Unit <filtro1336> is equivalent to the following FF/Latch, which will be removed : <output_30> 
+INFO:Xst:2261 - The FF/Latch <q_26> in Unit <filtro1336> is equivalent to the following FF/Latch, which will be removed : <output_26> 
+INFO:Xst:2261 - The FF/Latch <q_31> in Unit <filtro1336> is equivalent to the following FF/Latch, which will be removed : <output_31> 
+INFO:Xst:2261 - The FF/Latch <q_27> in Unit <filtro1336> is equivalent to the following FF/Latch, which will be removed : <output_27> 
+INFO:Xst:2261 - The FF/Latch <q_28> in Unit <filtro1336> is equivalent to the following FF/Latch, which will be removed : <output_28> 
+INFO:Xst:2261 - The FF/Latch <q_29> in Unit <filtro1336> is equivalent to the following FF/Latch, which will be removed : <output_29> 
+INFO:Xst:2261 - The FF/Latch <q_0> in Unit <filtro1336> is equivalent to the following FF/Latch, which will be removed : <output_0> 
+INFO:Xst:2261 - The FF/Latch <q_1> in Unit <filtro1336> is equivalent to the following FF/Latch, which will be removed : <output_1> 
+INFO:Xst:2261 - The FF/Latch <q_2> in Unit <filtro1336> is equivalent to the following FF/Latch, which will be removed : <output_2> 
+INFO:Xst:2261 - The FF/Latch <q_3> in Unit <filtro1336> is equivalent to the following FF/Latch, which will be removed : <output_3> 
+INFO:Xst:2261 - The FF/Latch <q_4> in Unit <filtro1336> is equivalent to the following FF/Latch, which will be removed : <output_4> 
+INFO:Xst:2261 - The FF/Latch <q_5> in Unit <filtro1336> is equivalent to the following FF/Latch, which will be removed : <output_5> 
+INFO:Xst:2261 - The FF/Latch <q_6> in Unit <filtro1336> is equivalent to the following FF/Latch, which will be removed : <output_6> 
+INFO:Xst:2261 - The FF/Latch <q_7> in Unit <filtro1336> is equivalent to the following FF/Latch, which will be removed : <output_7> 
+INFO:Xst:2261 - The FF/Latch <q_8> in Unit <filtro1336> is equivalent to the following FF/Latch, which will be removed : <output_8> 
+INFO:Xst:2261 - The FF/Latch <q_9> in Unit <filtro1336> is equivalent to the following FF/Latch, which will be removed : <output_9> 
+INFO:Xst:2261 - The FF/Latch <q_10> in Unit <filtro1336> is equivalent to the following FF/Latch, which will be removed : <output_10> 
+INFO:Xst:2261 - The FF/Latch <q_11> in Unit <filtro1336> is equivalent to the following FF/Latch, which will be removed : <output_11> 
+INFO:Xst:2261 - The FF/Latch <q_12> in Unit <filtro1336> is equivalent to the following FF/Latch, which will be removed : <output_12> 
+INFO:Xst:2261 - The FF/Latch <q_13> in Unit <filtro1336> is equivalent to the following FF/Latch, which will be removed : <output_13> 
+INFO:Xst:2261 - The FF/Latch <q_14> in Unit <filtro1336> is equivalent to the following FF/Latch, which will be removed : <output_14> 
+INFO:Xst:2261 - The FF/Latch <q_15> in Unit <filtro1336> is equivalent to the following FF/Latch, which will be removed : <output_15> 
+INFO:Xst:2261 - The FF/Latch <q_20> in Unit <filtro1336> is equivalent to the following FF/Latch, which will be removed : <output_20> 
+INFO:Xst:2261 - The FF/Latch <q_16> in Unit <filtro1336> is equivalent to the following FF/Latch, which will be removed : <output_16> 
+INFO:Xst:2261 - The FF/Latch <q_21> in Unit <filtro1336> is equivalent to the following FF/Latch, which will be removed : <output_21> 
+INFO:Xst:2261 - The FF/Latch <q_17> in Unit <filtro1477> is equivalent to the following FF/Latch, which will be removed : <output_17> 
+INFO:Xst:2261 - The FF/Latch <q_22> in Unit <filtro1477> is equivalent to the following FF/Latch, which will be removed : <output_22> 
+INFO:Xst:2261 - The FF/Latch <q_18> in Unit <filtro1477> is equivalent to the following FF/Latch, which will be removed : <output_18> 
+INFO:Xst:2261 - The FF/Latch <q_23> in Unit <filtro1477> is equivalent to the following FF/Latch, which will be removed : <output_23> 
+INFO:Xst:2261 - The FF/Latch <q_19> in Unit <filtro1477> is equivalent to the following FF/Latch, which will be removed : <output_19> 
+INFO:Xst:2261 - The FF/Latch <q_24> in Unit <filtro1477> is equivalent to the following FF/Latch, which will be removed : <output_24> 
+INFO:Xst:2261 - The FF/Latch <q_25> in Unit <filtro1477> is equivalent to the following FF/Latch, which will be removed : <output_25> 
+INFO:Xst:2261 - The FF/Latch <q_30> in Unit <filtro1477> is equivalent to the following FF/Latch, which will be removed : <output_30> 
+INFO:Xst:2261 - The FF/Latch <q_26> in Unit <filtro1477> is equivalent to the following FF/Latch, which will be removed : <output_26> 
+INFO:Xst:2261 - The FF/Latch <q_31> in Unit <filtro1477> is equivalent to the following FF/Latch, which will be removed : <output_31> 
+INFO:Xst:2261 - The FF/Latch <q_27> in Unit <filtro1477> is equivalent to the following FF/Latch, which will be removed : <output_27> 
+INFO:Xst:2261 - The FF/Latch <q_28> in Unit <filtro1477> is equivalent to the following FF/Latch, which will be removed : <output_28> 
+INFO:Xst:2261 - The FF/Latch <q_29> in Unit <filtro1477> is equivalent to the following FF/Latch, which will be removed : <output_29> 
+INFO:Xst:2261 - The FF/Latch <q_0> in Unit <filtro1477> is equivalent to the following FF/Latch, which will be removed : <output_0> 
+INFO:Xst:2261 - The FF/Latch <q_1> in Unit <filtro1477> is equivalent to the following FF/Latch, which will be removed : <output_1> 
+INFO:Xst:2261 - The FF/Latch <q_2> in Unit <filtro1477> is equivalent to the following FF/Latch, which will be removed : <output_2> 
+INFO:Xst:2261 - The FF/Latch <q_3> in Unit <filtro1477> is equivalent to the following FF/Latch, which will be removed : <output_3> 
+INFO:Xst:2261 - The FF/Latch <q_4> in Unit <filtro1477> is equivalent to the following FF/Latch, which will be removed : <output_4> 
+INFO:Xst:2261 - The FF/Latch <q_5> in Unit <filtro1477> is equivalent to the following FF/Latch, which will be removed : <output_5> 
+INFO:Xst:2261 - The FF/Latch <q_6> in Unit <filtro1477> is equivalent to the following FF/Latch, which will be removed : <output_6> 
+INFO:Xst:2261 - The FF/Latch <q_7> in Unit <filtro1477> is equivalent to the following FF/Latch, which will be removed : <output_7> 
+INFO:Xst:2261 - The FF/Latch <q_8> in Unit <filtro1477> is equivalent to the following FF/Latch, which will be removed : <output_8> 
+INFO:Xst:2261 - The FF/Latch <q_9> in Unit <filtro1477> is equivalent to the following FF/Latch, which will be removed : <output_9> 
+INFO:Xst:2261 - The FF/Latch <q_10> in Unit <filtro1477> is equivalent to the following FF/Latch, which will be removed : <output_10> 
+INFO:Xst:2261 - The FF/Latch <q_11> in Unit <filtro1477> is equivalent to the following FF/Latch, which will be removed : <output_11> 
+INFO:Xst:2261 - The FF/Latch <q_12> in Unit <filtro1477> is equivalent to the following FF/Latch, which will be removed : <output_12> 
+INFO:Xst:2261 - The FF/Latch <q_13> in Unit <filtro1477> is equivalent to the following FF/Latch, which will be removed : <output_13> 
+INFO:Xst:2261 - The FF/Latch <q_14> in Unit <filtro1477> is equivalent to the following FF/Latch, which will be removed : <output_14> 
+INFO:Xst:2261 - The FF/Latch <q_15> in Unit <filtro1477> is equivalent to the following FF/Latch, which will be removed : <output_15> 
+INFO:Xst:2261 - The FF/Latch <q_20> in Unit <filtro1477> is equivalent to the following FF/Latch, which will be removed : <output_20> 
+INFO:Xst:2261 - The FF/Latch <q_16> in Unit <filtro1477> is equivalent to the following FF/Latch, which will be removed : <output_16> 
+INFO:Xst:2261 - The FF/Latch <q_21> in Unit <filtro1477> is equivalent to the following FF/Latch, which will be removed : <output_21> 
+INFO:Xst:2261 - The FF/Latch <q_17> in Unit <filtro1633> is equivalent to the following FF/Latch, which will be removed : <output_17> 
+INFO:Xst:2261 - The FF/Latch <q_22> in Unit <filtro1633> is equivalent to the following FF/Latch, which will be removed : <output_22> 
+INFO:Xst:2261 - The FF/Latch <q_18> in Unit <filtro1633> is equivalent to the following FF/Latch, which will be removed : <output_18> 
+INFO:Xst:2261 - The FF/Latch <q_23> in Unit <filtro1633> is equivalent to the following FF/Latch, which will be removed : <output_23> 
+INFO:Xst:2261 - The FF/Latch <q_19> in Unit <filtro1633> is equivalent to the following FF/Latch, which will be removed : <output_19> 
+INFO:Xst:2261 - The FF/Latch <q_24> in Unit <filtro1633> is equivalent to the following FF/Latch, which will be removed : <output_24> 
+INFO:Xst:2261 - The FF/Latch <q_25> in Unit <filtro1633> is equivalent to the following FF/Latch, which will be removed : <output_25> 
+INFO:Xst:2261 - The FF/Latch <q_30> in Unit <filtro1633> is equivalent to the following FF/Latch, which will be removed : <output_30> 
+INFO:Xst:2261 - The FF/Latch <q_26> in Unit <filtro1633> is equivalent to the following FF/Latch, which will be removed : <output_26> 
+INFO:Xst:2261 - The FF/Latch <q_31> in Unit <filtro1633> is equivalent to the following FF/Latch, which will be removed : <output_31> 
+INFO:Xst:2261 - The FF/Latch <q_27> in Unit <filtro1633> is equivalent to the following FF/Latch, which will be removed : <output_27> 
+INFO:Xst:2261 - The FF/Latch <q_28> in Unit <filtro1633> is equivalent to the following FF/Latch, which will be removed : <output_28> 
+INFO:Xst:2261 - The FF/Latch <q_29> in Unit <filtro1633> is equivalent to the following FF/Latch, which will be removed : <output_29> 
+INFO:Xst:2261 - The FF/Latch <q_0> in Unit <filtro1633> is equivalent to the following FF/Latch, which will be removed : <output_0> 
+INFO:Xst:2261 - The FF/Latch <q_1> in Unit <filtro1633> is equivalent to the following FF/Latch, which will be removed : <output_1> 
+INFO:Xst:2261 - The FF/Latch <q_2> in Unit <filtro1633> is equivalent to the following FF/Latch, which will be removed : <output_2> 
+INFO:Xst:2261 - The FF/Latch <q_3> in Unit <filtro1633> is equivalent to the following FF/Latch, which will be removed : <output_3> 
+INFO:Xst:2261 - The FF/Latch <q_4> in Unit <filtro1633> is equivalent to the following FF/Latch, which will be removed : <output_4> 
+INFO:Xst:2261 - The FF/Latch <q_5> in Unit <filtro1633> is equivalent to the following FF/Latch, which will be removed : <output_5> 
+INFO:Xst:2261 - The FF/Latch <q_6> in Unit <filtro1633> is equivalent to the following FF/Latch, which will be removed : <output_6> 
+INFO:Xst:2261 - The FF/Latch <q_7> in Unit <filtro1633> is equivalent to the following FF/Latch, which will be removed : <output_7> 
+INFO:Xst:2261 - The FF/Latch <q_8> in Unit <filtro1633> is equivalent to the following FF/Latch, which will be removed : <output_8> 
+INFO:Xst:2261 - The FF/Latch <q_9> in Unit <filtro1633> is equivalent to the following FF/Latch, which will be removed : <output_9> 
+INFO:Xst:2261 - The FF/Latch <q_10> in Unit <filtro1633> is equivalent to the following FF/Latch, which will be removed : <output_10> 
+INFO:Xst:2261 - The FF/Latch <q_11> in Unit <filtro1633> is equivalent to the following FF/Latch, which will be removed : <output_11> 
+INFO:Xst:2261 - The FF/Latch <q_12> in Unit <filtro1633> is equivalent to the following FF/Latch, which will be removed : <output_12> 
+INFO:Xst:2261 - The FF/Latch <q_13> in Unit <filtro1633> is equivalent to the following FF/Latch, which will be removed : <output_13> 
+INFO:Xst:2261 - The FF/Latch <q_14> in Unit <filtro1633> is equivalent to the following FF/Latch, which will be removed : <output_14> 
+INFO:Xst:2261 - The FF/Latch <q_15> in Unit <filtro1633> is equivalent to the following FF/Latch, which will be removed : <output_15> 
+INFO:Xst:2261 - The FF/Latch <q_20> in Unit <filtro1633> is equivalent to the following FF/Latch, which will be removed : <output_20> 
+INFO:Xst:2261 - The FF/Latch <q_16> in Unit <filtro1633> is equivalent to the following FF/Latch, which will be removed : <output_16> 
+INFO:Xst:2261 - The FF/Latch <q_21> in Unit <filtro1633> is equivalent to the following FF/Latch, which will be removed : <output_21> 
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <maquina/FSM_0> on signal <estado_siguiente[1:2]> with user encoding.
+----------------------
+ State    | Encoding
+----------------------
+ espera   | 00
+ valido   | 01
+ invalido | 10
+ salida   | 11
+----------------------
+
+Optimizing unit <dtmf_top> ...
+
+Optimizing unit <bancoDeFiltros> ...
+
+Optimizing unit <maquina_estados> ...
+
+Optimizing unit <comparador> ...
+WARNING:Xst:1293 - FF/Latch <contador205/count_31> has a constant value of 0 in block <dtmf_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <contador205/count_30> has a constant value of 0 in block <dtmf_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <contador205/count_29> has a constant value of 0 in block <dtmf_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <contador205/count_28> has a constant value of 0 in block <dtmf_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <contador205/count_27> has a constant value of 0 in block <dtmf_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <contador205/count_26> has a constant value of 0 in block <dtmf_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <contador205/count_25> has a constant value of 0 in block <dtmf_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <contador205/count_24> has a constant value of 0 in block <dtmf_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <contador205/count_23> has a constant value of 0 in block <dtmf_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <contador205/count_22> has a constant value of 0 in block <dtmf_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <contador205/count_21> has a constant value of 0 in block <dtmf_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <contador205/count_20> has a constant value of 0 in block <dtmf_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <contador205/count_19> has a constant value of 0 in block <dtmf_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <contador205/count_18> has a constant value of 0 in block <dtmf_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <contador205/count_17> has a constant value of 0 in block <dtmf_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <contador205/count_16> has a constant value of 0 in block <dtmf_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <contador205/count_15> has a constant value of 0 in block <dtmf_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <contador205/count_14> has a constant value of 0 in block <dtmf_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <contador205/count_13> has a constant value of 0 in block <dtmf_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <contador205/count_12> has a constant value of 0 in block <dtmf_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <contador205/count_11> has a constant value of 0 in block <dtmf_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <contador205/count_10> has a constant value of 0 in block <dtmf_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <contador205/count_9> has a constant value of 0 in block <dtmf_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <contador205/count_8> has a constant value of 0 in block <dtmf_top>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block dtmf_top, actual ratio is 1075.
+Optimizing block <dtmf_top> to meet ratio 100 (+ 5) of 600 slices :
+WARNING:Xst:2254 - Area constraint could not be met for block <dtmf_top>, final ratio is 1037.
+FlipFlop filtros/filt1209/q1_16 has been replicated 2 time(s)
+FlipFlop filtros/filt1209/q1_17 has been replicated 3 time(s)
+FlipFlop filtros/filt1209/q1_18 has been replicated 2 time(s)
+FlipFlop filtros/filt1209/q1_7 has been replicated 1 time(s)
+FlipFlop filtros/filt1209/q1_8 has been replicated 3 time(s)
+FlipFlop filtros/filt1209/q1_9 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 870
+ Flip-Flops                                            : 870
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : dtmf_top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 57666
+#      GND                         : 1
+#      INV                         : 1676
+#      LUT1                        : 1388
+#      LUT2                        : 14701
+#      LUT3                        : 333
+#      LUT4                        : 3140
+#      LUT5                        : 359
+#      LUT6                        : 111
+#      MUXCY                       : 18310
+#      MUXF7                       : 1
+#      VCC                         : 1
+#      XORCY                       : 17645
+# FlipFlops/Latches                : 878
+#      FD                          : 259
+#      FDE                         : 71
+#      FDR                         : 532
+#      FDRE                        : 8
+#      LD                          : 8
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 39
+#      IBUF                        : 32
+#      OBUF                        : 7
+# DSPs                             : 8
+#      DSP48A1                     : 8
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx4ltqg144-1l 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             878  out of   4800    18%  
+ Number of Slice LUTs:                21708  out of   2400   904% (*) 
+    Number used as Logic:             21708  out of   2400   904% (*) 
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:  22233
+   Number with an unused Flip Flop:   21355  out of  22233    96%  
+   Number with an unused LUT:           525  out of  22233     2%  
+   Number of fully used LUT-FF pairs:   353  out of  22233     1%  
+   Number of unique control sets:         8
+
+IO Utilization: 
+ Number of IOs:                          40
+ Number of bonded IOBs:                  40  out of    102    39%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+ Number of DSP48A1s:                      8  out of      8   100%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 870   |
+contador205/flag205                | NONE(cmp/output_7)     | 8     |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 41.018ns (Maximum Frequency: 24.380MHz)
+   Minimum input arrival time before clock: 7.210ns
+   Maximum output required time after clock: 5.055ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 41.018ns (frequency: 24.380MHz)
+  Total number of paths / destination ports: 70155227216276328 / 1481
+-------------------------------------------------------------------------
+Delay:               41.018ns (Levels of Logic = 41)
+  Source:            filtros/filt1209/q1_13 (FF)
+  Destination:       filtros/filt1209/q_31 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: filtros/filt1209/q1_13 to filtros/filt1209/q_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             19   0.732   1.660  filtros/filt1209/q1_13 (filtros/filt1209/q1_13)
+     LUT2:I0->O            1   0.454   0.000  filtros/filt1209/Mmult_n0021_Madd5_lut<14> (filtros/filt1209/Mmult_n0021_Madd5_lut<14>)
+     MUXCY:S->O            1   0.370   0.000  filtros/filt1209/Mmult_n0021_Madd5_cy<14> (filtros/filt1209/Mmult_n0021_Madd5_cy<14>)
+     MUXCY:CI->O           1   0.015   0.000  filtros/filt1209/Mmult_n0021_Madd5_cy<15> (filtros/filt1209/Mmult_n0021_Madd5_cy<15>)
+     MUXCY:CI->O           1   0.015   0.000  filtros/filt1209/Mmult_n0021_Madd5_cy<16> (filtros/filt1209/Mmult_n0021_Madd5_cy<16>)
+     MUXCY:CI->O           1   0.015   0.000  filtros/filt1209/Mmult_n0021_Madd5_cy<17> (filtros/filt1209/Mmult_n0021_Madd5_cy<17>)
+     MUXCY:CI->O           1   0.015   0.000  filtros/filt1209/Mmult_n0021_Madd5_cy<18> (filtros/filt1209/Mmult_n0021_Madd5_cy<18>)
+     MUXCY:CI->O           1   0.015   0.000  filtros/filt1209/Mmult_n0021_Madd5_cy<19> (filtros/filt1209/Mmult_n0021_Madd5_cy<19>)
+     MUXCY:CI->O           1   0.015   0.000  filtros/filt1209/Mmult_n0021_Madd5_cy<20> (filtros/filt1209/Mmult_n0021_Madd5_cy<20>)
+     MUXCY:CI->O           1   0.015   0.000  filtros/filt1209/Mmult_n0021_Madd5_cy<21> (filtros/filt1209/Mmult_n0021_Madd5_cy<21>)
+     XORCY:CI->O           1   0.393   0.994  filtros/filt1209/Mmult_n0021_Madd5_xor<22> (filtros/filt1209/Mmult_n0021_Madd_285)
+     LUT2:I0->O            1   0.454   0.000  filtros/filt1209/Mmult_n0021_Madd8_lut<23> (filtros/filt1209/Mmult_n0021_Madd8_lut<23>)
+     MUXCY:S->O            1   0.370   0.000  filtros/filt1209/Mmult_n0021_Madd8_cy<23> (filtros/filt1209/Mmult_n0021_Madd8_cy<23>)
+     XORCY:CI->O           1   0.393   0.994  filtros/filt1209/Mmult_n0021_Madd8_xor<24> (filtros/filt1209/Mmult_n0021_Madd_298)
+     LUT2:I0->O            1   0.454   0.000  filtros/filt1209/Mmult_n0021_Madd10_lut<29> (filtros/filt1209/Mmult_n0021_Madd10_lut<29>)
+     MUXCY:S->O            1   0.370   0.000  filtros/filt1209/Mmult_n0021_Madd10_cy<29> (filtros/filt1209/Mmult_n0021_Madd10_cy<29>)
+     XORCY:CI->O           1   0.393   0.818  filtros/filt1209/Mmult_n0021_Madd10_xor<30> (filtros/filt1209/Mmult_n0021_Madd_3010)
+     LUT2:I1->O            1   0.430   0.000  filtros/filt1209/Mmult_n0021_Madd12_lut<30> (filtros/filt1209/Mmult_n0021_Madd12_lut<30>)
+     MUXCY:S->O            1   0.370   0.000  filtros/filt1209/Mmult_n0021_Madd12_cy<30> (filtros/filt1209/Mmult_n0021_Madd12_cy<30>)
+     XORCY:CI->O           1   0.393   0.818  filtros/filt1209/Mmult_n0021_Madd12_xor<31> (filtros/filt1209/n0021<31>)
+     LUT2:I1->O            1   0.430   0.000  filtros/filt1209/Madd_q1[31]_q[31]_add_1_OUT_lut<15> (filtros/filt1209/Madd_q1[31]_q[31]_add_1_OUT_lut<15>)
+     MUXCY:S->O            1   0.370   0.000  filtros/filt1209/Madd_q1[31]_q[31]_add_1_OUT_cy<15> (filtros/filt1209/Madd_q1[31]_q[31]_add_1_OUT_cy<15>)
+     XORCY:CI->O           3   0.393   0.880  filtros/filt1209/Madd_q1[31]_q[31]_add_1_OUT_xor<16> (filtros/filt1209/q1[31]_q[31]_add_1_OUT<16>)
+     DSP48A1:B16->P47     18   9.530   1.419  filtros/filt1209/Mmult_n0025 (filtros/filt1209/Mmult_n0025_P47_to_filt1209/Mmult_n00251)
+     DSP48A1:C30->PCOUT47    1   4.577   0.000  filtros/filt1209/Mmult_n00251 (filtros/filt1209/Mmult_n00251_PCOUT_to_filt1209/Mmult_n00252_PCIN_47)
+     DSP48A1:PCIN47->P47   18   3.934   1.419  filtros/filt1209/Mmult_n00252 (filtros/filt1209/Mmult_n00252_P47_to_filt1209/Mmult_n00253)
+     DSP48A1:C30->P0       1   4.675   0.818  filtros/filt1209/Mmult_n00253 (filtros/filt1209/n0025<34>)
+     LUT5:I4->O            1   0.430   0.000  filtros/filt1209/Mmux_inputSignal[31]_q2[31]_mux_9_OUT_rs_lut<18> (filtros/filt1209/Mmux_inputSignal[31]_q2[31]_mux_9_OUT_rs_lut<18>)
+     MUXCY:S->O            1   0.370   0.000  filtros/filt1209/Mmux_inputSignal[31]_q2[31]_mux_9_OUT_rs_cy<18> (filtros/filt1209/Mmux_inputSignal[31]_q2[31]_mux_9_OUT_rs_cy<18>)
+     MUXCY:CI->O           1   0.015   0.000  filtros/filt1209/Mmux_inputSignal[31]_q2[31]_mux_9_OUT_rs_cy<19> (filtros/filt1209/Mmux_inputSignal[31]_q2[31]_mux_9_OUT_rs_cy<19>)
+     MUXCY:CI->O           1   0.015   0.000  filtros/filt1209/Mmux_inputSignal[31]_q2[31]_mux_9_OUT_rs_cy<20> (filtros/filt1209/Mmux_inputSignal[31]_q2[31]_mux_9_OUT_rs_cy<20>)
+     MUXCY:CI->O           1   0.015   0.000  filtros/filt1209/Mmux_inputSignal[31]_q2[31]_mux_9_OUT_rs_cy<21> (filtros/filt1209/Mmux_inputSignal[31]_q2[31]_mux_9_OUT_rs_cy<21>)
+     MUXCY:CI->O           1   0.015   0.000  filtros/filt1209/Mmux_inputSignal[31]_q2[31]_mux_9_OUT_rs_cy<22> (filtros/filt1209/Mmux_inputSignal[31]_q2[31]_mux_9_OUT_rs_cy<22>)
+     MUXCY:CI->O           1   0.015   0.000  filtros/filt1209/Mmux_inputSignal[31]_q2[31]_mux_9_OUT_rs_cy<23> (filtros/filt1209/Mmux_inputSignal[31]_q2[31]_mux_9_OUT_rs_cy<23>)
+     MUXCY:CI->O           1   0.015   0.000  filtros/filt1209/Mmux_inputSignal[31]_q2[31]_mux_9_OUT_rs_cy<24> (filtros/filt1209/Mmux_inputSignal[31]_q2[31]_mux_9_OUT_rs_cy<24>)
+     MUXCY:CI->O           1   0.015   0.000  filtros/filt1209/Mmux_inputSignal[31]_q2[31]_mux_9_OUT_rs_cy<25> (filtros/filt1209/Mmux_inputSignal[31]_q2[31]_mux_9_OUT_rs_cy<25>)
+     MUXCY:CI->O           1   0.015   0.000  filtros/filt1209/Mmux_inputSignal[31]_q2[31]_mux_9_OUT_rs_cy<26> (filtros/filt1209/Mmux_inputSignal[31]_q2[31]_mux_9_OUT_rs_cy<26>)
+     MUXCY:CI->O           1   0.015   0.000  filtros/filt1209/Mmux_inputSignal[31]_q2[31]_mux_9_OUT_rs_cy<27> (filtros/filt1209/Mmux_inputSignal[31]_q2[31]_mux_9_OUT_rs_cy<27>)
+     MUXCY:CI->O           1   0.015   0.000  filtros/filt1209/Mmux_inputSignal[31]_q2[31]_mux_9_OUT_rs_cy<28> (filtros/filt1209/Mmux_inputSignal[31]_q2[31]_mux_9_OUT_rs_cy<28>)
+     MUXCY:CI->O           1   0.015   0.000  filtros/filt1209/Mmux_inputSignal[31]_q2[31]_mux_9_OUT_rs_cy<29> (filtros/filt1209/Mmux_inputSignal[31]_q2[31]_mux_9_OUT_rs_cy<29>)
+     MUXCY:CI->O           0   0.015   0.000  filtros/filt1209/Mmux_inputSignal[31]_q2[31]_mux_9_OUT_rs_cy<30> (filtros/filt1209/Mmux_inputSignal[31]_q2[31]_mux_9_OUT_rs_cy<30>)
+     XORCY:CI->O           1   0.393   0.000  filtros/filt1209/Mmux_inputSignal[31]_q2[31]_mux_9_OUT_rs_xor<31> (filtros/filt1209/inputSignal[31]_q2[31]_mux_9_OUT<31>)
+     FD:D                      0.234          filtros/filt1209/q_31
+    ----------------------------------------
+    Total                     41.018ns (31.197ns logic, 9.821ns route)
+                                       (76.1% logic, 23.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 354724 / 524
+-------------------------------------------------------------------------
+Offset:              7.210ns (Levels of Logic = 36)
+  Source:            inputSignal<0> (PAD)
+  Destination:       filtros/filt1209/q_31 (FF)
+  Destination Clock: clk rising
+
+  Data Path: inputSignal<0> to filtros/filt1209/q_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   1.594   1.295  inputSignal_0_IBUF (inputSignal_0_IBUF)
+     LUT2:I0->O            1   0.454   0.000  filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_lut<0> (filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_lut<0>)
+     MUXCY:S->O            1   0.370   0.000  filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<0> (filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<0>)
+     MUXCY:CI->O           1   0.015   0.000  filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<1> (filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<1>)
+     MUXCY:CI->O           1   0.015   0.000  filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<2> (filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<2>)
+     MUXCY:CI->O           1   0.015   0.000  filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<3> (filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<3>)
+     MUXCY:CI->O           1   0.015   0.000  filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<4> (filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<4>)
+     MUXCY:CI->O           1   0.015   0.000  filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<5> (filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<5>)
+     MUXCY:CI->O           1   0.015   0.000  filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<6> (filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<6>)
+     MUXCY:CI->O           1   0.015   0.000  filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<7> (filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<7>)
+     MUXCY:CI->O           1   0.015   0.000  filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<8> (filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<8>)
+     MUXCY:CI->O           1   0.015   0.000  filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<9> (filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<9>)
+     MUXCY:CI->O           1   0.015   0.000  filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<10> (filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<10>)
+     MUXCY:CI->O           1   0.015   0.000  filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<11> (filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<11>)
+     MUXCY:CI->O           1   0.015   0.000  filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<12> (filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<12>)
+     MUXCY:CI->O           1   0.015   0.000  filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<13> (filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<13>)
+     MUXCY:CI->O           1   0.015   0.000  filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<14> (filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<14>)
+     MUXCY:CI->O           1   0.015   0.000  filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<15> (filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<15>)
+     MUXCY:CI->O           1   0.015   0.000  filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<16> (filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<16>)
+     MUXCY:CI->O           1   0.015   0.000  filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<17> (filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<17>)
+     MUXCY:CI->O           1   0.015   0.000  filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<18> (filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<18>)
+     MUXCY:CI->O           1   0.015   0.000  filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<19> (filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<19>)
+     MUXCY:CI->O           1   0.015   0.000  filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<20> (filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<20>)
+     MUXCY:CI->O           1   0.015   0.000  filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<21> (filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<21>)
+     MUXCY:CI->O           1   0.015   0.000  filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<22> (filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<22>)
+     MUXCY:CI->O           1   0.015   0.000  filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<23> (filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<23>)
+     MUXCY:CI->O           1   0.015   0.000  filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<24> (filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<24>)
+     MUXCY:CI->O           1   0.015   0.000  filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<25> (filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<25>)
+     MUXCY:CI->O           1   0.015   0.000  filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<26> (filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<26>)
+     MUXCY:CI->O           1   0.015   0.000  filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<27> (filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<27>)
+     MUXCY:CI->O           1   0.015   0.000  filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<28> (filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<28>)
+     MUXCY:CI->O           1   0.015   0.000  filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<29> (filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_cy<29>)
+     XORCY:CI->O           3   0.393   1.218  filtros/filt1209/Madd_inputSignal[31]_GND_16_o_add_7_OUT_xor<30> (filtros/filt1209/inputSignal[31]_GND_16_o_add_7_OUT<30>)
+     LUT5:I2->O            1   0.454   0.000  filtros/filt1209/Mmux_inputSignal[31]_q2[31]_mux_9_OUT_rs_lut<30> (filtros/filt1209/Mmux_inputSignal[31]_q2[31]_mux_9_OUT_rs_lut<30>)
+     MUXCY:S->O            0   0.370   0.000  filtros/filt1209/Mmux_inputSignal[31]_q2[31]_mux_9_OUT_rs_cy<30> (filtros/filt1209/Mmux_inputSignal[31]_q2[31]_mux_9_OUT_rs_cy<30>)
+     XORCY:CI->O           1   0.393   0.000  filtros/filt1209/Mmux_inputSignal[31]_q2[31]_mux_9_OUT_rs_xor<31> (filtros/filt1209/inputSignal[31]_q2[31]_mux_9_OUT<31>)
+     FD:D                      0.234          filtros/filt1209/q_31
+    ----------------------------------------
+    Total                      7.210ns (4.697ns logic, 2.513ns route)
+                                       (65.1% logic, 34.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Offset:              5.055ns (Levels of Logic = 1)
+  Source:            maquina/salida_bcd_6 (FF)
+  Destination:       outputTop<6> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: maquina/salida_bcd_6 to outputTop<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.732   0.783  maquina/salida_bcd_6 (maquina/salida_bcd_6)
+     OBUF:I->O                 3.540          outputTop_6_OBUF (outputTop<6>)
+    ----------------------------------------
+    Total                      5.055ns (4.272ns logic, 0.783ns route)
+                                       (84.5% logic, 15.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+-------------------+---------+---------+---------+---------+
+                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------+---------+---------+---------+---------+
+clk                |   41.018|         |         |         |
+contador205/flag205|         |    9.977|         |         |
+-------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock contador205/flag205
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    5.938|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 95.00 secs
+Total CPU time to Xst completion: 95.32 secs
+ 
+--> 
+
+Total memory usage is 584964 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   42 (   0 filtered)
+Number of infos    :  514 (   0 filtered)
+

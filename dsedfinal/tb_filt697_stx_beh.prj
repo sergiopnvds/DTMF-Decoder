@@ -1,0 +1,2 @@
+vhdl isim_temp "filtro697.vhd"
+vhdl isim_temp "tb_filt697.vhd"

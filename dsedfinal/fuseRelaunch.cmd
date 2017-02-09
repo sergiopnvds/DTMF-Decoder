@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Sergio Penavades/VHDL/dsedfinal/tb_dtmf_top_isim_beh.exe" -prj "C:/Users/Sergio Penavades/VHDL/dsedfinal/tb_dtmf_top_beh.prj" "work.tb_dtmf_top" 

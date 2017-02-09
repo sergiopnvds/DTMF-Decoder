@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Sergio Penavades/VHDL/dsedfinal/tb_dtmf_top_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_textio" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="tb_dtmf_top" />
+            <top_module name="textio" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="18" />
+   <wvobject fp_name="/tb_dtmf_top/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dtmf_top/inputsignal" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">inputsignal[31:0]</obj_property>
+      <obj_property name="ObjectShortName">inputsignal[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dtmf_top/outputtop" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">outputtop[6:0]</obj_property>
+      <obj_property name="ObjectShortName">outputtop[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dtmf_top/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dtmf_top/uut/contador205/flag205" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">flag205</obj_property>
+      <obj_property name="ObjectShortName">flag205</obj_property>
+      <obj_property name="label">flag205</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dtmf_top/uut/cmp/input1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">input1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">input1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dtmf_top/uut/cmp/input2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">input2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">input2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dtmf_top/uut/cmp/input3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">input3[31:0]</obj_property>
+      <obj_property name="ObjectShortName">input3[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dtmf_top/uut/cmp/input4" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">input4[31:0]</obj_property>
+      <obj_property name="ObjectShortName">input4[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dtmf_top/uut/cmp/input5" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">input5[31:0]</obj_property>
+      <obj_property name="ObjectShortName">input5[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dtmf_top/uut/cmp/input6" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">input6[31:0]</obj_property>
+      <obj_property name="ObjectShortName">input6[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dtmf_top/uut/cmp/input7" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">input7[31:0]</obj_property>
+      <obj_property name="ObjectShortName">input7[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dtmf_top/uut/cmp/input8" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">input8[31:0]</obj_property>
+      <obj_property name="ObjectShortName">input8[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dtmf_top/uut/cmp/flag205" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">flag205</obj_property>
+      <obj_property name="ObjectShortName">flag205</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dtmf_top/uut/cmp/output" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">output[7:0]</obj_property>
+      <obj_property name="ObjectShortName">output[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dtmf_top/uut/cmp/umbral" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">umbral[31:0]</obj_property>
+      <obj_property name="ObjectShortName">umbral[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dtmf_top/uut/contador205/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dtmf_top/uut/contador205/count" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">count</obj_property>
+      <obj_property name="ObjectShortName">count</obj_property>
+   </wvobject>
+</wave_config>
